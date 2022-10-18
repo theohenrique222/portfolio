@@ -117,9 +117,9 @@
                 <button id="btn-mobile" class="hidden items-center"><span id="hamburger"></span></button>
                 <ul id="menu" class="flex gap-2 ">
                     <li><a class="block p-1.5 text-white hover:text-sky-500" href="#inicio">Início</a></li>
-                    <li><a class="block p-1.5 text-white hover:text-sky-500" href="">Sobre mim</a></li>
-                    <li><a class="block p-1.5 text-white hover:text-sky-500" href="/">Projetos</a></li>
-                    <li><a class="block p-1.5 text-white hover:text-sky-500" href="#habilidades">Habilidades</a></li>
+                    <li><a class="block p-1.5 text-white hover:text-sky-500" href="#sobre">Sobre mim</a></li>
+                    <li><a class="block p-1.5 text-white hover:text-sky-500" href="#projetos">Projetos</a></li>
+                    <li><a class="block p-1.5 text-white hover:text-sky-500" href="#habilidade">Habilidades</a></li>
                 </ul>
             </div>
         </nav>
@@ -140,7 +140,7 @@
   
     <!-- Página Inicial -->
   
-    <section class="bg-gradient-to-r from-black to-blue-700">
+    <section id="inicio" class="bg-gradient-to-r from-black to-blue-700">
       <div class="px-6 py-32 md:px-12 text-gray-800 text-center lg:text-left">
         <div class="container mx-auto xl:px-32">
           <div class="grid lg:grid-cols-2 items-center">
@@ -190,7 +190,7 @@
   
     <!-- Sobre -->
     
-    <section id="sobre" class="bg-gradient-to-r from-black to-blue-700 pt-5">
+    <section id="sobre" class="bg-gradient-to-r from-black to-blue-700 pt-10">
       <div data-aos="fade-up" data-aos-duration="1000" class="container lg:max-w-6xl pb-5 mx-auto hover:-translate-y-1 transition duration-500">
         <section class="text-gray-800 text-center lg:px-0 px-5 md:text-left">
           <div class="block rounded-lg shadow-lg bg-white">
@@ -223,7 +223,7 @@
   
     <!-- Projetos -->
   
-    <section class="bg-gray-200 pt-5 ">
+    <section id="projetos" class="bg-gray-200 pt-5 ">
       <main 
       data-aos="fade-down"
       data-aos-duration="1000" 
@@ -303,16 +303,15 @@
   
     <!-- Habilidades -->
   
-    <section id="habilidades">
+    <section id="habilidade">
       <div class="container pt-10 max-w-6xl mx-auto">
-        <section class="mb-32 text-gray-800 text-center">
+        <section class="mb-10 text-gray-800 text-center">
           <h2 class="text-3xl font-bold mb-12" >Habilidades</h2>
           <div class="grid md:grid-cols-3 gap-x-6 lg:gap-x-12">
             
             <!-- HTML -->
             
-            <div data-aos="fade-up"
-            data-aos-duration="500" class="mb-6 lg:mb-10">
+            <div data-aos="fade-up" data-aos-duration="500" class="mb-6 lg:mb-10">
               <div class="bg-white hover:-translate-y-1 duration-500 block rounded-lg shadow-lg">
                 <div class="relative overflow-hidden bg-no-repeat bg-cover">
                   <img src="img/html-logo.png" class="w-3/4 m-auto rounded-t-lg" />
@@ -330,15 +329,19 @@
                   <h5 class="text-lg font-bold mb-4">HTML</h5>
                   <p class="text-gray-500 mb-4">Linguagem de programação</p>
                   <ul class="list-inside flex mx-auto justify-center">
-                    <div>
-                      <div id="saberMais1" style="display: none;">
-                        <p class="pt-5 pb-5 mt-2 rounded-xl bg-gray-100">
-                          HTML é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML. HyTime é um padrão para a representação estruturada de hipermídia e conteúdo baseado em tempo.<br>
-                        </p>
-                      </div>
-                      <div class="container mx-auto justfy-center text-center">
-                        <input id="btt" onclick="saber1()" class="text-white text-xs bg-blue-500 px-5 py-3 rounded-lg hover:bg-blue-800 cursor-pointer mb-10 " type="button" value="Saber mais">
-                      </div>
+                    <div> 
+                      <p class="mb-4">
+                        <button class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHtml" aria-expanded="false" aria-controls="collapseHtml">
+                          Saber mais
+                        </button>
+                      </p>
+                      <div>
+                        <div class="collapse collapse-horizontal" id="collapseHtml">
+                          <div class="block p-6 rounded-lg shadow-lg bg-gray-100 max-w-sm" style="width: 300px;">
+                            HTML é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML. HyTime é um padrão para a representação estruturada de hipermídia e conteúdo baseado em tempo.
+                          </div>
+                        </div>
+                      </div> 
                     </div>
                   </ul>
                 </div>
@@ -347,8 +350,7 @@
 
             <!-- CSS -->
 
-            <div data-aos="fade-up"
-            data-aos-duration="1500" class="mb-6 lg:mb-10">
+            <div data-aos="fade-up" data-aos-duration="1500" class="mb-6 lg:mb-10">
               <div class="bg-white hover:-translate-y-1 duration-500 block rounded-lg shadow-lg">
                 <div class="relative overflow-hidden bg-no-repeat bg-cover">
                   <img src="img/css-logo.png" class="w-3/4 m-auto rounded-t-lg" />
@@ -366,14 +368,18 @@
                   <h5 class="text-lg font-bold mb-4">CSS</h5>
                   <p class="text-gray-500 mb-4">Cascading Style Sheets</p>
                   <ul class="list-inside flex mx-auto justify-center">
-                    <div>
-                      <div id="saberMais2" style="display: none;">
-                        <p class="pt-5 pb-5 mt-2 rounded-xl bg-gray-100">
-                          Cascading Style Sheets é um mecanismo para adicionar estilo a um documento web. O código CSS pode ser aplicado diretamente nas tags ou ficar contido dentro das tags. Também é possível, em vez de colocar a formatação dentro do documento, criar um link para um arquivo CSS que contém os estilos. <br>
-                        </p>
-                      </div>
-                      <div class="container mx-auto justfy-center text-center">
-                        <input id="btt2" onclick="saber2()" class="text-white text-xs bg-blue-500 px-5 py-3 rounded-lg hover:bg-blue-800 cursor-pointer mb-10 " type="button" value="Saber mais">
+                    <div> 
+                      <p class="mb-4">
+                        <button class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCSS" aria-expanded="false" aria-controls="collapseCSS">
+                          Saber mais
+                        </button>
+                      </p>
+                      <div>
+                        <div class="collapse collapse-horizontal" id="collapseCSS">
+                          <div class="block p-6 rounded-lg shadow-lg bg-gray-100 max-w-sm" style="width: 300px;">
+                            Cascading Style Sheets é um mecanismo para adicionar estilo a um documento web. O código CSS pode ser aplicado diretamente nas tags ou ficar contido dentro das tags. Também é possível, em vez de colocar a formatação dentro do documento, criar um link para um arquivo CSS que contém os estilos.
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </ul>
@@ -402,14 +408,18 @@
                   <h5 class="text-lg font-bold mb-4">Java Script</h5>
                   <p class="text-gray-500 mb-4">Linguagem de programação</p>
                   <ul class="list-inside flex mx-auto justify-center">
-                    <div>
-                      <div id="saberMais3" style="display: none;">
-                        <p class="pt-5 pb-5 mt-2 rounded-xl bg-gray-100">
-                          JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web. <br>
-                        </p>
-                      </div>
-                      <div class="container mx-auto justfy-center text-center">
-                        <input id="btt3" onclick="saber3()" class="text-white text-xs bg-blue-500 px-5 py-3 rounded-lg hover:bg-blue-800 cursor-pointer mb-10 " type="button" value="Saber mais">
+                    <div> 
+                      <p class="mb-4">
+                        <button class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" type="button" data-bs-toggle="collapse" data-bs-target="#collapseJS" aria-expanded="false" aria-controls="collapseJS">
+                          Saber mais
+                        </button>
+                      </p>
+                      <div>
+                        <div class="collapse collapse-horizontal" id="collapseJS">
+                          <div class="block p-6 rounded-lg shadow-lg bg-gray-100 max-w-sm" style="width: 300px;">
+                            JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web.
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </ul>
@@ -419,8 +429,7 @@
   
             <!-- Laravel -->
   
-            <div data-aos="fade-up"
-            data-aos-duration="500" class="mb-6 lg:mb-10">
+            <div data-aos="fade-up" data-aos-duration="500" class="mb-6 lg:mb-10">
               <div class="bg-white block rounded-lg shadow-lg">
                 <div class="relative overflow-hidden bg-no-repeat bg-cover">
                   <img src="img/laravel-logo.png" class="w-3/4 m-auto rounded-t-lg" />
@@ -440,19 +449,17 @@
                   <ul class="list-inside flex mx-auto justify-center">
                     <div> 
                       <p class="mb-4">
-                        <button class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                        <button class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLaravel" aria-expanded="false" aria-controls="collapseLaravel">
                           Saber mais
                         </button>
                       </p>
-                      <div style="min-height: 120px;">
-                        <div class="collapse collapse-horizontal" id="collapseWidthExample">
-                          <div class="block p-6 rounded-lg shadow-lg bg-white max-w-sm" style="width: 300px;">
+                      <div>
+                        <div class="collapse collapse-horizontal" id="collapseLaravel">
+                          <div class="block p-6 rounded-lg shadow-lg bg-gray-100 max-w-sm" style="width: 300px;">
                             Laravel é um framework PHP livre e open-source criado por Taylor B. Otwell para o desenvolvimento de sistemas web que utilizam o padrão MVC.
                           </div>
                         </div>
                       </div>
-  
-                      
                     </div>
                   </ul>
                 </div>
@@ -461,8 +468,7 @@
   
             <!-- Mysql -->
   
-            <div data-aos="fade-up"
-            data-aos-duration="1500" class="mb-6 lg:mb-10">
+            <div data-aos="fade-up" data-aos-duration="1500" class="mb-6 lg:mb-10">
               <div class="bg-white block rounded-lg shadow-lg">
                 <div class="relative overflow-hidden bg-no-repeat bg-cover">
                   <img src="img/mysql-logo.png" class="w-3/4 m-auto rounded-t-lg" />
@@ -482,13 +488,13 @@
                   <ul class="list-inside flex mx-auto justify-center">
                     <div>
                       <p class="mb-4">
-                        <button class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample2" aria-expanded="false" aria-controls="collapseWidthExample2">
+                        <button class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMySQL" aria-expanded="false" aria-controls="collapseMySQL">
                           Saber mais
                         </button>
                       </p>
-                      <div style="min-height: 120px;">
-                        <div class="collapse collapse-horizontal" id="collapseWidthExample2">
-                          <div class="block p-6 rounded-lg shadow-lg bg-white max-w-sm" style="width: 300px;">
+                      <div>
+                        <div class="collapse collapse-horizontal" id="collapseMySQL">
+                          <div class="block p-6 rounded-lg shadow-lg bg-gray-100 max-w-sm" style="width: 300px;">
                             O MySQL é um sistema de gerenciamento de banco de dados, que utiliza a linguagem SQL como interface. É atualmente um dos sistemas de gerenciamento de bancos de dados mais populares da Oracle Corporation, com mais de 10 milhões de instalações pelo mundo.
                           </div>
                         </div>
@@ -501,8 +507,7 @@
   
             <!-- Tailwind -->
   
-            <div data-aos="fade-up"
-            data-aos-duration="3000" class="mb-6 lg:mb-10">
+            <div data-aos="fade-up" data-aos-duration="3000" class="mb-6 lg:mb-10">
               <div class="bg-white block rounded-lg shadow-lg">
                 <div class="relative overflow-hidden bg-no-repeat bg-cover">
                   <img src="img/tailwind-logo.png" class="w-3/4 m-auto rounded-t-lg" />
@@ -522,12 +527,12 @@
                   <ul class="list-inside flex mx-auto justify-center">
                     <div x-data="{ expanded: false }">
                       <p class="mb-4">
-                        <button class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample3" aria-expanded="false" aria-controls="collapseWidthExample3">
+                        <button class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTailwind" aria-expanded="false" aria-controls="collapseTailwind">
                           Saber mais
                         </button>
                       </p>
-                      <div style="min-height: 120px;">
-                        <div class="collapse collapse-horizontal" id="collapseWidthExample3">
+                      <div>
+                        <div class="collapse collapse-horizontal" id="collapseTailwind">
                           <div class="block p-6 rounded-lg shadow-lg bg-white max-w-sm" style="width: 300px;">
                             Como Tailwind é um framework que usa classes de utilidades, os elementos podem ficar lotados de classes, sem contar a repetição e a manutenção para vários componentes ao mesmo tempo.
                           </div>
@@ -576,7 +581,7 @@
 
     <!-- Testemunhos -->
 
-    <section class="mb-32 text-gray-800 text-center">
+    <section class="mb-32 bg-gray-100 max-w-6xl py-10 m-auto rounded-lg text-gray-800 text-center">
       <h1 class="text-3xl font-bold mb-12">Testemunhos</h1>
       <div id="carouselExampleCaptions" class="carousel slide relative carousel-dark" data-bs-ride="carousel">
         <div class="carousel-inner relative w-full overflow-hidden">
@@ -604,9 +609,7 @@
             </div>
             <p class="text-gray-500">- Teresa May</p>
             <p class="text-xl italic mx-auto text-gray-700 max-w-4xl">
-              "Neque cupiditate assumenda in maiores repudiandae mollitia adipisci maiores
-              repudiandae mollitia consectetur adipisicing architecto elit sed adipiscing
-              elit."
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequuntur delectus voluptatibus qui hic, explicabo saepe sed maxime rem odit eaque mollitia recusandae quibusdam. Odit ipsum alias nihil aspernatur sit!
             </p>
            
           </div>
@@ -620,9 +623,7 @@
             </div>
             <p class="text-gray-500">- Kate Allise</p>
             <p class="text-xl italic mx-auto text-gray-700 max-w-4xl">
-              "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-              dolore eu fugiat nulla pariatur est laborum neque cupiditate assumenda in
-              maiores."
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eum incidunt facere mollitia consectetur tenetur blanditiis, adipisci illum quam nesciunt voluptas dolorum vero repudiandae! Culpa in modi dolorem velit eum?
             </p>
           </div>
         </div>
