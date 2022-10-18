@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Portfólio | Theo Henrique</title>
+</head>
+<body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <style>
+        * {
+            font-family: poppins;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: rgba(0, 0, 0, 0.774);
+        }
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgb(1, 128, 247);
+            border-radius: 5px;
+        }
+
+        @media (max-width: 640px) {
+            #menu {
+                display: block;
+                position: absolute;
+                width: 100%;
+                top: 70px;
+                right: 0px;
+                background: #00000094;
+                backdrop-filter: blur(8px);
+                transition: .6s;
+                z-index: 1000;
+                height: 0px;
+                visibility: hidden;
+                overflow-y: hidden;
+            }
+            #nav.active #menu {
+                height: calc(100vh - 64px);
+                visibility: visible;
+                overflow-y: auto;
+            }
+            #menu a {
+                padding: 1rem 0;
+                margin: 0 1rem;
+                border-bottom: 2px solid rgba(187, 187, 187, 0.438);
+                color: white;
+                text-align: center;
+            }
+            #btn-mobile {
+                display: flex;
+                padding: .5rem 1rem;
+                font-size: 1rem;
+                border: none;
+                background: none;
+                cursor: pointer;
+                gap: .5rem;
+            }
+            #hamburger {
+                border-top: 2px solid;
+                width: 20px;
+                color: rgb(255, 255, 255);
+            }
+            #hamburger:hover {
+              color: rgb(0, 174, 255);
+            }
+            #hamburger::after, #hamburger::before {
+                content: '';
+                display: block;
+                width: 20px;
+                height: 2px;
+                background: currentColor;
+                margin-top: 5px;
+                transition: .7s;
+                position: relative;
+            }
+
+            #nav.active #hamburger {
+                border-top-color: transparent;
+            }
+
+            #nav.active #hamburger::before {
+                transform: rotate(135deg);
+            }
+
+            #nav.active #hamburger::after {
+                transform: rotate(-135deg);
+                top: -7px;
+            }
+        }
+    </style>
+
+    <!-- barra de navegação -->
+
+    <header class="fixed w-full bg-black/30 border-b-2 border-white/70 shadow-xl backdrop-blur z-50">
+        <nav id="header" class="flex lg:max-w-6xl md:max-w-3xl sm:max-w-xl xl:px-0 px-5 m-auto box-border h-16 items-center justify-between">
+            <div id="logo" class="text-2xl text-white font-semibold hover:text-sky-500 transition">
+                <a href=""> ‹TH/› </a>
+            </div>
+            <div id="nav">
+                <button id="btn-mobile" class="hidden items-center"><span id="hamburger"></span></button>
+                <ul id="menu" class="flex gap-2 ">
+                    <li><a class="block p-1.5 text-white hover:text-sky-500" href="#inicio">Início</a></li>
+                    <li><a class="block p-1.5 text-white hover:text-sky-500" href="">Sobre mim</a></li>
+                    <li><a class="block p-1.5 text-white hover:text-sky-500" href="/">Projetos</a></li>
+                    <li><a class="block p-1.5 text-white hover:text-sky-500" href="#habilidades">Habilidades</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+  <style>
+      #elementEl::after {
+        content: '|';
+        margin-left: 5px;
+        animation: blink 0.7s infinite;
+      }
+    
+      @keyframes blink {
+        0% { opacity: 1; }
+        100% { opacity: 0; }
+      }
+  </style>
+  
+    <!-- Página Inicial -->
+  
+    <section class="bg-gradient-to-r from-black to-blue-700">
+      <div class="px-6 py-32 md:px-12 text-gray-800 text-center lg:text-left">
+        <div class="container mx-auto xl:px-32">
+          <div class="grid lg:grid-cols-2 items-center">
+            <div class="md:mt-12 lg:mt-0 mt-10 mb-12 lg:mb-0 z-20">
+              <div data-aos="fade-right" data-aos-duration="1000" class="block rounded-xl shadow-2xl py-12 bg-white/60 backdrop-blur md:px-12 lg:-mr-14">
+                  <div class="text-4xl md:text-3xl xl:text-4xl font-semibold tracking-tight mb-12">
+                      <h1>Olá, meu nome é</h1>
+                      <h2 id="elementEl" class="text-blue-600 text-5xl font-bold">Theo Henrique</h2>
+                      <script>
+                        "use strict";
+                        function typeWriter(el) {
+                          const textArray = el.innerHTML.split("");
+                          el.innerHTML = "";
+                          textArray.forEach((letter, i) => {
+                            setTimeout(() => (el.innerHTML += letter), 200 * i);
+                          });
+                          // setInterval(() => typeWriter(el), 5000);
+                        }
+                        typeWriter(elementEl);
+                      </script>
+                      <h1 class="text-xl font-light">Desenvolvedor Front-end</h1>
+                  </div>
+                <a class="inline-block px-10 py-3 mb-2 md:mb-0 md:mr-2 bg-blue-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" href="https://github.com/theohenrique222">Github<span>
+                  <svg class="inline-block text-white ml-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                </span>
+              </a>
+                <a class="inline-block px-7 py-3 bg-white/50 text-blue-600 font-medium text-sm leading-snug uppercase rounded hover:text-blue-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none focus:ring-0 active:bg-gray-200 transition duration-150 ease-in-out" href="https://www.linkedin.com/in/theo-henrique-160400245/">Linkedin<span>
+                  <svg class="inline-block text-blue-500 ml-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"/></svg>
+                </span>
+              </a>
+              </div>
+            </div>
+            <div data-aos="fade-left" class="lg:flex hidden">
+              <img
+                src="https://img.freepik.com/fotos-premium/fundo-de-tecnologia-abstrata-de-codigo-de-programacao-do-desenvolvedor-de-software-e-script-de-computador_34663-31.jpg?w=740"
+                class="w-full rounded-xl shadow-lg "
+                alt="imagem"/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center pb-7">
+        <a href="#sobre" class="text-white"><p class="inline-block hover:text-blue-500 transition">fade-down</p><img class="inline-block animate-bounce" src="img/scroll.png"></a>
+      </div>
+    </section>
+  
+    <!-- Sobre -->
+    
+    <section id="sobre" class="bg-gradient-to-r from-black to-blue-700 pt-5">
+      <div data-aos="fade-up" data-aos-duration="1000" class="container lg:max-w-6xl pb-5 mx-auto hover:-translate-y-1 transition duration-500">
+        <section class="text-gray-800 text-center lg:px-0 px-5 md:text-left">
+          <div class="block rounded-lg shadow-lg bg-white">
+            <div class="flex flex-wrap">
+              <div class="grow-0 shrink-0 basis-auto lg:flex lg:w-4/12 xl:w-4/12 hidden">
+                <img src="img/foto-theo.jpeg" alt="Theo Henrique"
+                  class="w-full sm-hidden rounded-r-xl" />
+              </div>
+              <div class="grow-0 shrink-0 basis-auto w-full lg:px-0 lg:w-8/12 xl:w-8/12 sm:w-full">
+                <div class="px-6 py-12 md:px-12">
+                  <h2 class="text-3xl font-bold mb-5 text-blue-600 uppercase">Sobre mim</h2>
+                  <p class="text-gray-500 mb-10 mt-5">
+                    Meu nome é Theodoro Henrique, sou um apaixonado por música e tecnologia que decidiu trilhar no caminho da programação. Procuro ganhar experiências em projetos envolvendo sistema integrado, APIs e banco de dados. Atualmente estou focando nas tecnologias voltadas ao FrontEnd.
+                  </p>
+                  <p class="text-gray-500 mb-6">
+                    Hoje entendo tecnologias como Tailwind CSS, Laravel, Mysql, etc.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <svg class="relative text-gray-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="currentColor"
+          d="M0,96L48,128C96,160,192,224,288,240C384,256,480,224,576,213.3C672,203,768,213,864,202.7C960,192,1056,160,1152,128C1248,96,1344,64,1392,48L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path>
+      </svg>
+    </section>
+  
+    <!-- Projetos -->
+  
+    <section class="bg-gray-200 pt-5 ">
+      <main 
+      data-aos="fade-down"
+      data-aos-duration="1000" 
+      class="container lg:max-w-6xl sm:max-w-xl pb-10 mx-auto">
+        <div class="text-gray-800">
+          <h2 class="text-3xl font-bold mb-12 text-center uppercase">Projetos</h2>
+          <div class="grid lg:grid-cols-3 gap-6">
+            <div class="shadow-lg rounded-lg relative overflow-hidden cursor-pointer w-full h-full">
+              <div class="bg-gray-500 w-full h-56">
+                <div class="flex justify-center items-center h-full">
+                  <h5 class="text-white bg-black w-full text-center hover:tracking-widest duration-500 text-3xl -rotate-45 cursor-pointer">EM BREVE</h5>
+                </div>
+              </div>
+            </div>
+            <div class="shadow-lg rounded-lg relative overflow-hidden cursor-pointer w-full h-full">
+              <div class="bg-gray-500 w-full h-56">
+                <div class="flex justify-center items-center h-full">
+                  <h5 class="text-white bg-black w-full text-center hover:tracking-widest duration-500 text-3xl -rotate-45 cursor-pointer">EM BREVE</h5>
+                </div>
+              </div>
+            </div>
+            <div class="shadow-lg rounded-lg relative overflow-hidden cursor-pointer w-full h-full">
+              <div class="bg-gray-500 w-full h-56">
+                <div class="flex justify-center items-center h-full">
+                  <h5 class="text-white bg-black w-full text-center hover:tracking-widest duration-500 text-3xl -rotate-45 cursor-pointer">EM BREVE</h5>
+                </div>
+              </div>
+            </div>
+        </div>
+      </main>
+
+      <script>
+        function mostrar() {
+          if (document.getElementById('habilidades').style.display == 'none') {
+            document.getElementById('habilidades').style.display = 'grid';
+            document.getElementById('bt').value = "Ver Menos";
+          } else {
+            document.getElementById('habilidades').style.display = 'none';
+            document.getElementById('bt').value = "Ver Mais";
+          }
+        }
+      </script>
+
+      <main data-aos="fade-down" id="habilidades" class=" z-20 container max-w-6xl pb-10 mx-auto transition-all duration-700 invisivel" style="display: none;">
+        <div class="text-gray-800">
+          <div class="grid lg:grid-cols-3 gap-6">
+  
+            <div class="shadow-lg rounded-lg relative overflow-hidden cursor-pointer w-full h-full">
+              <div class="bg-gray-500 w-full h-56">
+                <div class="flex justify-center items-center h-full">
+                  <h5 class="text-white bg-black w-full text-center hover:tracking-widest duration-500 text-3xl -rotate-45 cursor-pointer">EM BREVE</h5>
+                </div>
+              </div>
+            </div>
+            <div class="shadow-lg rounded-lg relative overflow-hidden cursor-pointer w-full h-full">
+              <div class="bg-gray-500 w-full h-56">
+                <div class="flex justify-center items-center h-full">
+                  <h5 class="text-white bg-black w-full text-center hover:tracking-widest duration-500 text-3xl -rotate-45 cursor-pointer">EM BREVE</h5>
+                </div>
+              </div>
+            </div>
+            <div class="shadow-lg rounded-lg relative overflow-hidden cursor-pointer w-full h-full">
+              <div class="bg-gray-500 w-full h-56">
+                <div class="flex justify-center items-center h-full">
+                  <h5 class="text-white bg-black w-full text-center hover:tracking-widest duration-500 text-3xl -rotate-45 cursor-pointer">EM BREVE</h5>
+                </div>
+              </div>
+            </div>
+        </div>
+      </main>
+  
+      <div data-aos="fade-up"
+      data-aos-duration="1000" class="container mx-auto justfy-center text-center">
+        <input id="bt" onclick="mostrar()" class="text-white text-base bg-blue-500 px-20 py-3 rounded-lg hover:bg-blue-800 cursor-pointer mb-10 " type="button" value="Ver Mais">
+      </div>
+    </section>
+  
+    <!-- Habilidades -->
+  
+    <section id="habilidades">
+      <div class="container pt-10 max-w-6xl mx-auto">
+        <section class="mb-32 text-gray-800 text-center">
+          <h2 class="text-3xl font-bold mb-12" >Habilidades</h2>
+          <div class="grid md:grid-cols-3 gap-x-6 lg:gap-x-12">
+            
+            <!-- HTML -->
+            
+            <div data-aos="fade-up"
+            data-aos-duration="500" class="mb-6 lg:mb-10">
+              <div class="bg-white hover:-translate-y-1 duration-500 block rounded-lg shadow-lg">
+                <div class="relative overflow-hidden bg-no-repeat bg-cover">
+                  <img src="img/html-logo.png" class="w-3/4 m-auto rounded-t-lg" />
+                  <a href="#!">
+                    <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"></div>
+                  </a>
+                  <svg class="absolute" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
+                    style="left: 0; bottom: 0">
+                    <path fill="#fff"
+                      d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                    </path>
+                  </svg>
+                </div>
+                <div class="p-6">
+                  <h5 class="text-lg font-bold mb-4">HTML</h5>
+                  <p class="text-gray-500 mb-4">Linguagem de programação</p>
+                  <ul class="list-inside flex mx-auto justify-center">
+                    <div>
+                      <div id="saberMais1" style="display: none;">
+                        <p class="pt-5 pb-5 mt-2 rounded-xl bg-gray-100">
+                          HTML é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML. HyTime é um padrão para a representação estruturada de hipermídia e conteúdo baseado em tempo.<br>
+                        </p>
+                      </div>
+                      <div class="container mx-auto justfy-center text-center">
+                        <input id="btt" onclick="saber1()" class="text-white text-xs bg-blue-500 px-5 py-3 rounded-lg hover:bg-blue-800 cursor-pointer mb-10 " type="button" value="Saber mais">
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- CSS -->
+
+            <div data-aos="fade-up"
+            data-aos-duration="1500" class="mb-6 lg:mb-10">
+              <div class="bg-white hover:-translate-y-1 duration-500 block rounded-lg shadow-lg">
+                <div class="relative overflow-hidden bg-no-repeat bg-cover">
+                  <img src="img/css-logo.png" class="w-3/4 m-auto rounded-t-lg" />
+                  <a href="#!">
+                    <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"></div>
+                  </a>
+                  <svg class="absolute" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
+                    style="left: 0; bottom: 0">
+                    <path fill="#fff"
+                      d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                    </path>
+                  </svg>
+                </div>
+                <div class="p-6">
+                  <h5 class="text-lg font-bold mb-4">CSS</h5>
+                  <p class="text-gray-500 mb-4">Cascading Style Sheets</p>
+                  <ul class="list-inside flex mx-auto justify-center">
+                    <div>
+                      <div id="saberMais2" style="display: none;">
+                        <p class="pt-5 pb-5 mt-2 rounded-xl bg-gray-100">
+                          Cascading Style Sheets é um mecanismo para adicionar estilo a um documento web. O código CSS pode ser aplicado diretamente nas tags ou ficar contido dentro das tags. Também é possível, em vez de colocar a formatação dentro do documento, criar um link para um arquivo CSS que contém os estilos. <br>
+                        </p>
+                      </div>
+                      <div class="container mx-auto justfy-center text-center">
+                        <input id="btt2" onclick="saber2()" class="text-white text-xs bg-blue-500 px-5 py-3 rounded-lg hover:bg-blue-800 cursor-pointer mb-10 " type="button" value="Saber mais">
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            <!-- JavaScript -->
+
+            <div data-aos="fade-up"
+            data-aos-duration="3000" class="mb-6 lg:mb-10">
+              <div class="bg-white hover:-translate-y-1 duration-500 block rounded-lg shadow-lg">
+                <div class="relative overflow-hidden bg-no-repeat bg-cover">
+                  <img src="img/js-logo.png" class="w-3/4 m-auto rounded-t-lg" />
+                  <a href="#!">
+                    <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"></div>
+                  </a>
+                  <svg class="absolute" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
+                    style="left: 0; bottom: 0">
+                    <path fill="#fff"
+                      d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                    </path>
+                  </svg>
+                </div>
+                <div class="p-6">
+                  <h5 class="text-lg font-bold mb-4">Java Script</h5>
+                  <p class="text-gray-500 mb-4">Linguagem de programação</p>
+                  <ul class="list-inside flex mx-auto justify-center">
+                    <div>
+                      <div id="saberMais3" style="display: none;">
+                        <p class="pt-5 pb-5 mt-2 rounded-xl bg-gray-100">
+                          JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web. <br>
+                        </p>
+                      </div>
+                      <div class="container mx-auto justfy-center text-center">
+                        <input id="btt3" onclick="saber3()" class="text-white text-xs bg-blue-500 px-5 py-3 rounded-lg hover:bg-blue-800 cursor-pointer mb-10 " type="button" value="Saber mais">
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Laravel -->
+  
+            <div data-aos="fade-up"
+            data-aos-duration="500" class="mb-6 lg:mb-10">
+              <div class="bg-white block rounded-lg shadow-lg">
+                <div class="relative overflow-hidden bg-no-repeat bg-cover">
+                  <img src="img/laravel-logo.png" class="w-3/4 m-auto rounded-t-lg" />
+                  <a href="#!">
+                    <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"></div>
+                  </a>
+                  <svg class="absolute" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
+                    style="left: 0; bottom: 0">
+                    <path fill="#fff"
+                      d="M0,288L48,256C96,224,192,160,288,160C384,160,480,224,576,213.3C672,203,768,117,864,85.3C960,53,1056,75,1152,69.3C1248,64,1344,32,1392,16L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                    </path>
+                  </svg>
+                </div>
+                <div class="p-6">
+                  <h5 class="text-lg font-bold mb-4">Laravel</h5>
+                  <p class="text-gray-500 mb-4">Framework PHP</p>
+                  <ul class="list-inside flex mx-auto justify-center">
+                    <div> 
+                      <p class="mb-4">
+                        <button class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                          Saber mais
+                        </button>
+                      </p>
+                      <div style="min-height: 120px;">
+                        <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                          <div class="block p-6 rounded-lg shadow-lg bg-white max-w-sm" style="width: 300px;">
+                            Laravel é um framework PHP livre e open-source criado por Taylor B. Otwell para o desenvolvimento de sistemas web que utilizam o padrão MVC.
+                          </div>
+                        </div>
+                      </div>
+  
+                      
+                    </div>
+                  </ul>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Mysql -->
+  
+            <div data-aos="fade-up"
+            data-aos-duration="1500" class="mb-6 lg:mb-10">
+              <div class="bg-white block rounded-lg shadow-lg">
+                <div class="relative overflow-hidden bg-no-repeat bg-cover">
+                  <img src="img/mysql-logo.png" class="w-3/4 m-auto rounded-t-lg" />
+                  <a href="#!">
+                    <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"></div>
+                  </a>
+                  <svg class="absolute" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
+                    style="left: 0; bottom: 0">
+                    <path fill="#fff"
+                      d="M0,288L48,256C96,224,192,160,288,160C384,160,480,224,576,213.3C672,203,768,117,864,85.3C960,53,1056,75,1152,69.3C1248,64,1344,32,1392,16L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                    </path>
+                  </svg>
+                </div>
+                <div class="p-6">
+                  <h5 class="text-lg font-bold mb-4">MySQL</h5>
+                  <p class="text-gray-500 mb-4">Software baixável</p>
+                  <ul class="list-inside flex mx-auto justify-center">
+                    <div>
+                      <p class="mb-4">
+                        <button class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample2" aria-expanded="false" aria-controls="collapseWidthExample2">
+                          Saber mais
+                        </button>
+                      </p>
+                      <div style="min-height: 120px;">
+                        <div class="collapse collapse-horizontal" id="collapseWidthExample2">
+                          <div class="block p-6 rounded-lg shadow-lg bg-white max-w-sm" style="width: 300px;">
+                            O MySQL é um sistema de gerenciamento de banco de dados, que utiliza a linguagem SQL como interface. É atualmente um dos sistemas de gerenciamento de bancos de dados mais populares da Oracle Corporation, com mais de 10 milhões de instalações pelo mundo.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Tailwind -->
+  
+            <div data-aos="fade-up"
+            data-aos-duration="3000" class="mb-6 lg:mb-10">
+              <div class="bg-white block rounded-lg shadow-lg">
+                <div class="relative overflow-hidden bg-no-repeat bg-cover">
+                  <img src="img/tailwind-logo.png" class="w-3/4 m-auto rounded-t-lg" />
+                  <a href="#!">
+                    <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"></div>
+                  </a>
+                  <svg class="absolute" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
+                    style="left: 0; bottom: 0">
+                    <path fill="#fff"
+                      d="M0,288L48,256C96,224,192,160,288,160C384,160,480,224,576,213.3C672,203,768,117,864,85.3C960,53,1056,75,1152,69.3C1248,64,1344,32,1392,16L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                    </path>
+                  </svg>
+                </div>
+                <div class="p-6">
+                  <h5 class="text-lg font-bold mb-4">Tailwind CSS</h5>
+                  <p class="text-gray-500 mb-4">Framework CSS</p>
+                  <ul class="list-inside flex mx-auto justify-center">
+                    <div x-data="{ expanded: false }">
+                      <p class="mb-4">
+                        <button class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample3" aria-expanded="false" aria-controls="collapseWidthExample3">
+                          Saber mais
+                        </button>
+                      </p>
+                      <div style="min-height: 120px;">
+                        <div class="collapse collapse-horizontal" id="collapseWidthExample3">
+                          <div class="block p-6 rounded-lg shadow-lg bg-white max-w-sm" style="width: 300px;">
+                            Como Tailwind é um framework que usa classes de utilidades, os elementos podem ficar lotados de classes, sem contar a repetição e a manutenção para vários componentes ao mesmo tempo.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>    
+      </div>
+    </section>
+
+    <script>
+      function saber1(){
+        if (document.getElementById('saberMais1').style.display == 'none') {
+          document.getElementById('saberMais1').style.display = 'flex';
+          document.getElementById('btt').value = "Saber menos"
+        } else {
+          document.getElementById('saberMais1').style.display = 'none';
+          document.getElementById('btt').value = "Saber mais";
+        }
+      }
+      function saber2(){
+        if (document.getElementById('saberMais2').style.display == 'none') {
+          document.getElementById('saberMais2').style.display = 'flex';
+          document.getElementById('btt2').value = "Saber menos"
+        } else {
+          document.getElementById('saberMais2').style.display = 'none';
+          document.getElementById('btt2').value = "Saber mais";
+        }
+      }
+      function saber3(){
+        if (document.getElementById('saberMais3').style.display == 'none') {
+          document.getElementById('saberMais3').style.display = 'flex';
+          document.getElementById('btt3').value = "Saber menos"
+        } else {
+          document.getElementById('saberMais3').style.display = 'none';
+          document.getElementById('btt3').value = "Saber mais";
+        }
+      }
+
+    </script>
+
+    <!-- Testemunhos -->
+
+    <section class="mb-32 text-gray-800 text-center">
+      <h1 class="text-3xl font-bold mb-12">Testemunhos</h1>
+      <div id="carouselExampleCaptions" class="carousel slide relative carousel-dark" data-bs-ride="carousel">
+        <div class="carousel-inner relative w-full overflow-hidden">
+          <div class="carousel-item active relative float-left w-full text-center">
+            <div class="mt-12 mb-6 flex justify-center">
+              <img
+                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
+                class="rounded-full w-24 h-24 shadow-lg"
+                alt="smaple image"
+              />
+            </div>
+            <p class="text-gray-500">- Anna Morian</p>
+            <p class="text-xl italic mx-auto text-gray-700 max-w-4xl">
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet
+              numquam iure provident voluptate esse quasi, voluptas nostrum quisquam!"
+            </p>
+          </div>
+          <div class="carousel-item relative float-left w-full text-center">
+            <div class="mt-12 mb-6 flex justify-center">
+              <img
+                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(31).webp"
+                class="rounded-full w-24 h-24 shadow-lg"
+                alt="smaple image"
+              />
+            </div>
+            <p class="text-gray-500">- Teresa May</p>
+            <p class="text-xl italic mx-auto text-gray-700 max-w-4xl">
+              "Neque cupiditate assumenda in maiores repudiandae mollitia adipisci maiores
+              repudiandae mollitia consectetur adipisicing architecto elit sed adipiscing
+              elit."
+            </p>
+           
+          </div>
+          <div class="carousel-item relative float-left w-full text-center">
+            <div class="mt-12 mb-6 flex justify-center">
+              <img
+                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp"
+                class="rounded-full w-24 h-24 shadow-lg"
+                alt="smaple image"
+              />
+            </div>
+            <p class="text-gray-500">- Kate Allise</p>
+            <p class="text-xl italic mx-auto text-gray-700 max-w-4xl">
+              "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+              dolore eu fugiat nulla pariatur est laborum neque cupiditate assumenda in
+              maiores."
+            </p>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+          <span class="visually-hidden">Voltar</span>
+        </button>
+        <button
+          class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+          <span class="visually-hidden">Avançar</span>
+        </button>
+      </div>
+    </section>
+
+  <!-- Footer -->
+    <footer class="text-center bg-blue-900 text-white">
+      <div class="container px-6 pt-6">
+        <div class="flex justify-center mb-6">
+          <a href="https://www.facebook.com/theodoro.henrique.7/" type="button" class="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-white hover:text-blue-900 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
+            <svg aria-hidden="true"
+            focusable="false"
+            data-prefix="fab"
+            data-icon="facebook-f"
+            class="w-2 h-full mx-auto"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 320 512"
+          >
+            <path
+              fill="currentColor"
+              d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+            ></path>
+            </svg>
+          </a>
+  
+          <a href="https://www.instagram.com/theohbezerra_/?hl=pt" type="button" class="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-white hover:text-blue-900 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
+            <svg aria-hidden="true"
+            focusable="false"
+            data-prefix="fab"
+            data-icon="instagram"
+              class="w-3 h-full mx-auto"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+            >
+              <path
+                fill="currentColor"
+                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+              ></path>
+            </svg>
+          </a>
+  
+          <a href="https://www.linkedin.com/in/theo-henrique-160400245/" type="button" class="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-white hover:text-blue-900 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
+            <svg aria-hidden="true"
+            focusable="false"
+            data-prefix="fab"
+            data-icon="linkedin-in"
+              class="w-3 h-full mx-auto"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+            >
+              <path
+                fill="currentColor"
+                d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+              ></path>
+            </svg>
+          </a>
+  
+          <a href="https://github.com/theohenrique222" type="button" class="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-white hover:text-blue-900 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
+            <svg aria-hidden="true"
+            focusable="false"
+            data-prefix="fab"
+            data-icon="github"
+            class="w-3 h-full mx-auto"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 496 512">
+              <path
+                fill="currentColor"
+                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+  
+      <div class="bg-black/50 text-center p-4">
+        © 2022 Copyright: THEO HENRIQUE
+      </div>
+    </footer>
+</body>
+<script src="script/script.js"></script>
+<script>
+    const btnMobile = document.getElementById('btn-mobile');
+
+    function toggleMenu(event) {
+        if (event.type == 'touchstart') event.preventDefault();
+        const nav = document.getElementById('nav');
+        nav.classList.toggle('active');
+    }
+
+    btnMobile.addEventListener('click', toggleMenu);
+    btnMobile.addEventListener('touchstart', toggleMenu);
+</script>
+</html>
