@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Boxincons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google font - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800;900&display=swap" rel="stylesheet">
+    <!-- Animation AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Tailwind CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+    <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js" defer></script>
+    <script>
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+        fontFamily: {
+            sans: ["Roboto", "sans-serif"],
+            body: ["Roboto", "sans-serif"],
+            mono: ["ui-monospace", "monospace"],
+        },
+        },
+        corePlugins: {
+        preflight: false,
+        },
+    };
+    </script>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <!-- Styles -->
+    <script src="scripts.js" defer></script>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio | Theo Henrique</title>
+</head>
+<body>
+    <script>
+        AOS.init();
+      </script>
+    <!-- header design -->
+
+    <header>
+        <a href="#home" class="logo">Th<span>e</span>o<span>.</span></a>
+        <ul class="navlist">
+            <li><a href="#home" class="active">Início</a></li>
+            <li><a href="#about">Sobre Mim</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+        <div class="bx bx-menu" id="menu-icon">
+        </div>
+    </header>
+
+    <!-- home section -->
+
+     <section class="home" id="home">
+        <div class="home-text" data-aos="fade-up" data-aos-duration="1000">
+            <div class="slide">
+                <span class="one">Olá</span>
+                <span class="two">Eu sou</span>
+            </div>
+            <!-- <h1>Theo Henrique</h1> -->
+            <h1 id="elementEl">Theo Henrique</h1>
+            <script>
+            "use strict";
+            function typeWriter(el) {
+                const textArray = el.innerHTML.split("");
+                el.innerHTML = "";
+                textArray.forEach((letter, i) => {
+                setTimeout(() => (el.innerHTML += letter), 200 * i);
+                });
+                setInterval(() => typeWriter(el), 5000);
+            }
+            typeWriter(elementEl);
+            </script>
+
+            <h3>Front-end<span> Developer.</span></h3>
+            <p class="p-home" data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa fugiat ipsam ipsum sapiente neque inventore tempore. Amet ex veniam natus, aspernatur minus obcaecati voluptas quis enim. Voluptatem fuga vitae iusto!</p>
+            <div class="button" data-aos="fade-up" data-aos-duration="1000">
+                <a class="inline-block px-10 py-3 mb-2 md:mb-0 md:mr-2 font-medium text-sm leading-snug uppercase rounded shadow-md bg-orange-600 text-white hover:bg-orange-800 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" href="https://github.com/theohenrique222" target="_blank">Github<span>
+                    <svg class="inline-block text-white hover:text-orange-600 ml-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path>
+                    </svg>
+                  </span>
+                </a>
+            </div>
+            <div class="button" data-aos="fade-up" data-aos-duration="1000">
+                <a class="inline-block px-10 py-3 mb-2 md:mb-0 md:mr-2 font-medium text-sm leading-snug uppercase rounded shadow-md bg-white text-orange-600 hover:text-current hover:bg-orange-800 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" href="https://www.linkedin.com/in/theo-henrique-160400245/">Linkedin<span>
+                    <svg class="inline-block text-orange-600 hover:text-white ml-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"></path></svg>
+                  </span>
+                </a>
+            </div>
+        </div>
+     </section>
+
+     <!-- about section -->
+
+     <section class="about" id="about">
+        <div class="about-img" data-aos="fade-up" data-aos-duration="2000">
+            <img src="foto-th.png" alt="Foto-perfil">
+        </div>
+        <div class="about-text" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="font-bold">Sobre <span>Mim</span></h2>
+            <h4>Desenvolvedor Front-end</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore vel quod expedita, dolor quam atque nulla quia! Repellendus optio voluptate officia eaque error dicta, cumque, delectus ad voluptatum earum quae!</p>
+            <a href="" class="btn">Saber Mais</a>
+        </div>
+     </section>
+
+     <!-- services section -->
+
+     <section class="services" id="services">
+        <div class="main-text" data-aos="fade-up" data-aos-duration="1000">
+            <p>No que sou especialista</p>
+            <h2 class="font-bold"><span>Meus</span> Serviços</h2>
+        </div>
+        <div class="services-content">
+
+            <div class="box" data-aos="fade-up" data-aos-duration="1000">
+                <div class="s-icon">
+                    <i class='bx bx-mobile-alt'></i>
+                </div>
+                <h3>Web Design</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat quae dolor quod ipsam nulla doloribus ut fugit eligendi. Non eaque minus explicabo temporibus inventore maiores magnam, atque nostrum sed at.</p>
+                <a href="" class="read">Read More</a>
+            </div>
+
+            <div class="box" data-aos="fade-up" data-aos-duration="2000">
+                <div class="s-icon">
+                    <i class='bx bx-code-alt' ></i>
+                </div>
+                <h3>Desenvolvedor Web</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam earum adipisci temporibus quam illum dolorum, sapiente id ab esse quaerat, sequi minima quas. Dolor molestias tempora, excepturi libero sint quidem.</p>
+                <a href="" class="read">Read More</a>
+            </div>
+
+            <div class="box" data-aos="fade-up" data-aos-duration="3000">
+                <div class="s-icon">
+                    <i class='bx bx-edit-alt' ></i>
+                </div>
+                <h3>Design Criativo</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam earum adipisci temporibus quam illum dolorum, sapiente id ab esse quaerat, sequi minima quas. Dolor molestias tempora, excepturi libero sint quidem.</p>
+                <a href="" class="read">Read More</a>
+            </div>
+        </div>
+     </section>
+
+     <!-- Portfólio section -->
+
+     <section class="portfolio" id="portfolio">
+        <div class="main-text" data-aos="fade-up" data-aos-duration="1000">
+            <p>Portfólio</p>
+            <h2 class="font-bold"><span>Projetos</span> Recetes</h2>
+        </div>
+        <div class="portfolio-content">
+
+            <div class="row" data-aos="fade-up" data-aos-duration="1000">
+                <img src="login-cadastro.jpg" alt="">
+                <div class="layer">
+                    <h5>Tela de Login e Cadastro</h5>
+                    <p>Projeto de tela de login e cadastro, responsiva, desenvolvido em HTML, CSS e Javasctipt.</p>
+                    <a href="https://theohenrique222.github.io/login.register/" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="row" data-aos="fade-up" data-aos-duration="2000">
+                <img src="login.jpg" alt="">
+                <div class="layer">
+                    <h5>Tela de Login</h5>
+                    <p>Projeto de tela de login simples responsiva, desenvolvida em HTML, CSS e Javascript. </p>
+                    <a href="https://theohenrique222.github.io/login/" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="row" data-aos="fade-up" data-aos-duration="3000">
+                <img src="calculadoraJs.jpg" alt="">
+                <div class="layer">
+                    <h5>Calculadora</h5>
+                    <p>Projeto de calculadora, desenvolvida em HTML, CSS e Javascript.</p>
+                    <a href="https://theohenrique222.github.io/calculadoraJs/" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="row" data-aos="fade-up" data-aos-duration="3000">
+                <img src="lista-de-afazeres.jpg" alt="">
+                <div class="layer">
+                    <h5>Lista de Afazeres</h5>
+                    <p>Projeto de Todolist, desenvolvida em HTML, CSS e Javascript.</p>
+                    <a href="https://theohenrique222.github.io/calculadoraJs/" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="row" data-aos="fade-up" data-aos-duration="3000">
+                <img src="loading.jpg" alt="">
+                <div class="layer">
+                    <h5>Em Breve</h5>
+                    <p>Projeto em desenvolvimento.</p>
+                    <a href="loading.jpg" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="row" data-aos="fade-up" data-aos-duration="3000">
+                <img src="loading.jpg" alt="">
+                <div class="layer">
+                    <h5>Em Breve</h5>
+                    <p>Projeto em desenvolvimento.</p>
+                    <a href="loading.jpg" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!-- contact section -->
+     
+     <section class="contact" id="contact" data-aos="fade-up" data-aos-duration="3000">
+        <div class="contact-text" >
+            <h2 class="font-bold">Contate-<span>Me!</span></h2>
+            <h4>Se você tem projeto em sua mente.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, nisi rem placeat earum consectetur corrupti sunt pariatur, veniam, ratione laboriosam velit tenetur.</p>
+            <div class="list">
+                <li><a href="https://wa.me/message/TQG43CPOB4N2N1" target="_blank"><i class='bx bxl-whatsapp'></i> +55 (84) 99127-4081</a></li>
+                <li><a href="https://go.microsoft.com/fwlink/?linkid=2135450" target="_blank"><i class='bx bxs-envelope'></i> theodoro222@hotmail.com</a></li>
+                <li><a href="">Redes sociais e profissionais</a></li>
+            </div>
+            <div class="contact-icons">
+                <a href="https://www.linkedin.com/in/theodoro-henrique-160400245/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/theohenrique222" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.instagram.com/theohbezerra_/?hl=pt" target="_blank"><i class='bx bxl-instagram-alt' ></i></a>
+                <a href="https://wa.me/message/TQG43CPOB4N2N1" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+            </div>
+        </div>
+        <div class="contact-form">
+            <form action="mailto:theodoro222@hotmail.com" method="post" enctype="text/plain">
+                <div class="relative mb-3" data-te-input-wrapper-init>
+                    <input
+                        id=""
+                        name="nome: "
+                        type="text"
+                        class="peer block min-h-[auto] w-full rounded border-0 bg-white/5 px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-orange-600 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                      placeholder="" />
+                    <label
+                      class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-gray-400 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-orange-600 peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-orange-600"
+                      >Nome completo
+                    </label>
+                </div>
+                <div class="relative mb-3" data-te-input-wrapper-init>
+                    <input
+                        name="e-mail: "
+                        type="email"
+                        class="peer block min-h-[auto] w-full rounded border-0 bg-white/5 px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                      id=""
+                      placeholder="Seu endereço de e-mail" />
+                    <label
+                      class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-gray-400 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-orange-600 peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-orange-600"
+                      >Seu endereço de e-mail
+                    </label>
+                </div>
+                <div class="relative mb-3" data-te-input-wrapper-init>
+                    <input
+                        name="contato: "
+                        maxlength="15" onkeyup="handlePhone(event)"
+                        type="tel"
+                        class="peer block min-h-[auto] w-full rounded border-0 bg-white/5 px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                        id=""
+                        placeholder="Telefone para contato" required/>
+                    <label
+                        class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-gray-400 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-orange-600 peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-orange-600"
+                        >Telefone para contato
+                    </label>
+                </div>
+                <div class="relative mb-3" data-te-input-wrapper-init>
+                    <textarea
+                        name="mensagem: "
+                        cols="35" rows="10" placeholder="Como posso te ajudar?"
+                        class="peer block min-h-[auto] w-full rounded border-0 bg-white/5 px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                        id=""
+                        placeholder="Como posso te ajudar?"></textarea>
+                    <label
+                        class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-gray-400 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-orange-600 peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-orange-600"
+                        >Em que posso te ajudar?
+                    </label>
+                </div>
+                <input type="submit" value="Enviar Mensagem" class="submit" required>
+            </form>
+        </div>
+     </section>
+     <!-- End section -->
+     <section class="end">
+        <div class="last-text">
+            <p>Copirygt 2023 By Theodoro Henrique</p>
+        </div>
+        <div class="top">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+     </section>
+</body>
+</html>
