@@ -10,9 +10,6 @@ export default {
       colors: {
         'orange-color': '#ff4d05'
       },
-      backgroundImage: {
-        home: "url('./img/background.jpg')"
-      },
       backgroundColor: {
         'orange-color': '#ff4d05',
       }

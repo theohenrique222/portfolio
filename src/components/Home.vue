@@ -1,5 +1,5 @@
 <template>
-  <section class=" lg:h-[40rem] h-screen bg-center bg-home bg-no-repeat bg-black lg:bg-top" id="home">
+  <section class=" lg:h-[40rem] h-screen bg-center bg-[url('./img/background.jpg')] bg-no-repeat bg-black lg:bg-top" id="home">
     <main class="lg:max-w-7xl max-w-sm mx-auto">
       <div
         class="flex-col lg:top-40 top-52 space-y-4 text-white absolute text-2xl font-semibold"
