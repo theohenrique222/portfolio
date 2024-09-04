@@ -56,7 +56,7 @@ export default {
   data() {
     return {
       items_menu: [
-        { id: 1, name: "Início", route_to: "/", isAnchor: true },
+        { id: 1, name: "Início", route_to: "#home", isAnchor: true },
         { id: 2, name: "Sobre Mim", route_to: "#sobre" },
         { id: 3, name: "Serviços", route_to: "#servicos" },
         { id: 4, name: "Portfólio", route_to: "#portfolio" },

@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full bg-black">
+  <section class="w-full bg-black" id="sobre">
     <main class="m-auto max-w-7xl flex flex-col md:flex-row items-center justify-around">
       <!-- Imagem -->
       <div class="flex md:w-1/2 lg:justify-start justify-center">

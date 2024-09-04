@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-neutral-900">
+  <section class="bg-neutral-900" id="contato">
     <main
       class="grid lg:px-0 px-10 lg:grid-cols-2 items-center gap-6 py-10 max-w-7xl m-auto"
       id="contact"
