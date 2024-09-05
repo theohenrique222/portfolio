@@ -11,7 +11,7 @@ export default {
         'orange-color': '#ff4d05'
       },
       backgroundImage: {
-        home: "url('./src/assets/background.jpg')"
+        home: "url('src/assets/background.jpg')"
       },
       backgroundColor: {
         'orange-color': '#ff4d05',
