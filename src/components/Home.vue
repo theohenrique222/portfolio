@@ -63,7 +63,5 @@ export default {
 </script>
 
 <style>
-#home {
-  background-image: url('./src/assets/background.jpg');
-}
+
 </style>
