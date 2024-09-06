@@ -11,7 +11,7 @@
       </div>
       
       <!-- Conteúdo -->
-      <div class="flex flex-col lg:px-0 px-10 md:w-1/2 pb-10">
+      <div class="flex flex-col lg:px-0 px-8 md:w-1/2 pb-10">
         <h1 class="font-extrabold text-4xl md:text-5xl mb-5 text-white">
           Sobre <span class="text-orange-500">Mim</span>
         </h1>

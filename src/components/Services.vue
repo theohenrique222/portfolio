@@ -1,6 +1,6 @@
 <template>
   <div class="bg-neutral-950 flex items-center justify-center" id="servicos">
-    <div class="container mx-auto py-8">
+    <div class="container mx-auto py-8 max-w-7xl lg:px-0 px-5">
         <div class="text-center text-white mb-20 mt-10">
             <h3 class="font-extralight">No que sou especialista</h3>
             <h1 class="font-extrabold text-4xl md:text-5xl"><span class="text-orange-color text-4xl md:text-5xl">Meus</span> Serviços</h1>

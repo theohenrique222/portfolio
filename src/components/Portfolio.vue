@@ -1,10 +1,6 @@
 <template>
   <section class="w-full lg:px-0 px-10 bg-black pb-20" id="portfolio">
-    <div
-      class=" lg:max-w-7xl mb-5 text-white text-center pt-10 pb-10"
-      data-aos="fade-up"
-      data-aos-duration="1000"
-    >
+    <div class="mb-5 text-center text-white pt-10 pb-10">
       <p class="font-light text-base">Portfólio</p>
       <h2 class="font-bold text-4xl">
         <span class="text-orange-color text-4xl md:text-5xl">Projetos</span> Recentes
