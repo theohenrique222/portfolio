@@ -16,7 +16,7 @@
             :name="card.ionIcon"
             class="text-5xl text-orange-500 mb-10 pt-5"
           ></ion-icon>
-          <h2 class="text-2xl font-semibold text-white mb-4">
+          <h2 class="text-2xl font-semibold text-white text-center mb-4">
             {{ card.title }}
           </h2>
           <h3 class="text-gray-100 text-center mb-4">{{ card.content }}</h3>
@@ -33,7 +33,7 @@
               >{{ item }}
             </li>
           </ul>
-          <h4 class="text-orange-color font-bold tracking-wider italic">
+          <h4 class="text-orange-color font-bold tracking-wider italic text-center">
             {{ card.conclusion }}
           </h4>
         </div>

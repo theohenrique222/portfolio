@@ -64,7 +64,7 @@
               name="mensagem: "
               id="textarea"
               rows="3"
-              class="h-60 block w-full rounded resize-none bg-neutral-800 text-white px-3"
+              class="h-60 block w-full rounded resize-none bg-neutral-800 text-white p-3"
             ></textarea>
           </div>
 

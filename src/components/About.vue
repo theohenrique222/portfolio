@@ -2,7 +2,7 @@
   <section class="w-full bg-black" id="sobre">
     <main class="m-auto max-w-7xl flex flex-col md:flex-row items-center justify-around">
       <!-- Imagem -->
-      <div class="flex md:w-1/2 lg:justify-start justify-center">
+      <div class="flex md:w-1/2 lg:justify-start justify-center pb-5">
         <img
           class="rounded-xl w-3/4 h-auto md:h-5/6"
           :src="image_src"

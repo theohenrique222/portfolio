@@ -6,3 +6,7 @@
     font-family: Poppins;
     scroll-behavior: smooth;
 }
+
+#home {
+    background-image: url('assets/background.jpg');
+}
