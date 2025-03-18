@@ -1,6 +1,6 @@
 <template>
   <section class="w-full bg-black" id="sobre">
-    <main class="m-auto max-w-7xl flex flex-col md:flex-row items-center justify-around">
+    <main class="m-auto max-w-6xl flex flex-col md:flex-row items-center justify-around">
       <!-- Imagem -->
       <div class="flex md:w-1/2 lg:justify-start justify-center pb-5">
         <img
@@ -45,12 +45,12 @@ export default {
     return {
       image_src: "/img/avatar.jpg",
       name_image: "Theo Henrique",
-      description1: "Sou um desenvolvedor front-end apaixonado por criar experiências digitais impactantes e intuitivas. Com uma sólida experiência em HTML, CSS e JavaScript, e conhecimento em frameworks e bibliotecas modernos. Minha expertise abrange uma variedade de ferramentas e tecnologias, incluindo:",
+      description1: "Sou um desenvolvedor Full Stack apaixonado por criar soluções digitais completas, impactantes e intuitivas. Com sólida experiência em HTML, CSS e PHP, além de conhecimentos em frameworks e bibliotecas modernas, atuo tanto no desenvolvimento de interfaces responsivas quanto na construção de back-ends robustos e eficientes. Minha expertise abrange uma variedade de ferramentas e tecnologias, incluindo:",
       description2: "Meu objetivo é combinar criatividade com tecnologia de ponta para desenvolver soluções que não apenas atendam, mas superem as expectativas.",
       tecnologies: [
-        { id: 1, name: "Tailwind CSS: ", content: "Para criar designs personalizados e responsivos de forma eficiente." },
-        { id: 2, name: "Vue.js e React Native: ", content: "Para construir interfaces dinâmicas e aplicações móveis envolventes." },
-        { id: 3, name: "Laravel: ", content: "Compreendo as bases deste framework PHP, o que me permite colaborar eficazmente em projetos que integram front-end e back-end." },
+        { name: "Laravel: ", content: "Experiência sólida em Laravel, criando aplicações completas com integração entre front-end e back-end." },
+        { name: "Tailwind CSS: ", content: "Com Tailwind CSS, desenvolvo interfaces modernas e responsivas com agilidade e flexibilidade." },
+        { name: "Vue.js: ", content: "Experiência com Vue.js na criação de interfaces interativas e aplicações móveis envolventes, focando em performance e usabilidade." },
       ]
     };
   },
