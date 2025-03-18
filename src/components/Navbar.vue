@@ -1,6 +1,6 @@
 <template>
   <nav class="bg-black/70 backdrop-blur text-white fixed top-0 left-0 right-0 p-2 z-50 border-b-2 shadow-2xl shadow-black border-gray-500">
-    <div class="container mx-auto flex justify-between items-center">
+    <div class="container mx-auto flex justify-between items-center max-w-6xl">
       <!-- Logo -->
       <div class="text-4xl font-bold">
         <a href="/" aria-label="Home">Th<span class="text-orange-color">e</span>o<span class="text-orange-color">.</span></a>
