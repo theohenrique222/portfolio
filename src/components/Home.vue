@@ -12,7 +12,7 @@
         <h2 class="lg:text-3xl text-xl font-semibold">
           Full-Stack <span class="text-orange-color">Developer</span>.
         </h2>
-        <div class="lg:w-1/2 w-full font-light text-lg tracking-wide pb-10 text-gray-100">
+        <div class="lg:w-1/2 w-full font-light text-base tracking-wide pb-10 text-gray-100">
           <p>{{ descryption }}</p>
         </div>
 
