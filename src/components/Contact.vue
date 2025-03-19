@@ -69,7 +69,7 @@
           </div>
 
           <button
-            class="inline-block w-full text-white bg-sky-500 px-10 p-4 rounded-md hover:bg-sky-800 tracking-wider"
+            class="inline-block w-full text-white bg-success-500 px-10 p-4 rounded-md hover:bg-success-800 tracking-wider"
             type="submit"
           >
             Enviar Mensagem

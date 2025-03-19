@@ -1,7 +1,9 @@
 <template>
-  <section class=" lg:h-[40rem] h-screen bg-center bg-no-repeat bg-black lg:bg-top" id="home">
+  <div class="bg-black w-full h-16">
+  </div>
+  <section class=" lg:h-[40rem] h-screen bg-center bg-no-repeat bg-black lg:bg-top relative" id="home">
     <main class="lg:max-w-6xl max-w-sm mx-auto">
-      <div class="flex-col lg:top-40 top-52 space-y-4 text-white absolute text-2xl font-semibold px-3">
+      <div class="flex-col lg:top-40 top-32 space-y-10 lg:space-y-4 text-white absolute text-2xl font-semibold px-3">
         <div class="flex flex-1 space-x-3">
           <h2 class="bg-orange-color px-3 rounded-md">Olá</h2>
           <h2>Eu sou</h2>
