@@ -1,6 +1,17 @@
 {
-  "title-1"         : "Hello",
-  "title-2"         : "I am",
-  "description"     : "I am a Full Stack developer focused on transforming ideas into complete solutions, combining a robust back-end with responsive and functional interfaces. My goal is to deliver applications that not only delight users with an intuitive experience but are also efficient and well-structured behind the scenes.",
+  "title-1": "Hello",
+  "title-2": "I am",
+  "description": "I am a Full Stack developer focused on transforming ideas into complete solutions, combining a robust back-end with responsive and functional interfaces. My goal is to deliver applications that not only delight users with an intuitive experience but are also efficient and well-structured behind the scenes.",
+  "about-1": "About",
+  "about-2": "Me",
+  "about-3": "Welcome to my portfolio!",
+  "about-4": "I am a Full Stack developer passionate about creating complete, impactful, and intuitive digital solutions. With solid experience in HTML, CSS, and PHP, as well as knowledge of modern frameworks and libraries, I work both in developing responsive interfaces and building robust and efficient back-ends. My expertise covers a variety of tools and technologies, including:",
+  "about-laravel": "Laravel: ",
+  "about-laravel-desc": "Solid experience in Laravel, building complete applications with front-end and back-end integration.",
+  "about-tailwind": "Tailwind CSS: ",
+  "about-tailwind-desc": "With Tailwind CSS, I develop modern and responsive interfaces with agility and flexibility.",
+  "about-vue": "Vue.js: ",
+  "about-vue-desc": "Experience with Vue.js in creating interactive interfaces and engaging mobile applications, focusing on performance and usability.",
+  "about-conclusion": "Let's build something amazing together!",
   "change_language": "Change language"
 }
