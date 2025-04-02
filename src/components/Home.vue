@@ -5,15 +5,15 @@
     <main class="lg:max-w-6xl max-w-sm mx-auto">
       <div class="flex-col lg:top-40 top-24 space-y-10 lg:space-y-4 text-white absolute text-2xl font-semibold px-3">
         <div class="flex flex-1 space-x-3">
-          <h2 class="bg-orange-color px-3 rounded-md">Olá</h2>
-          <h2>Eu sou</h2>
+          <h2 class="bg-orange-color px-3 rounded-md">{{ $t("title-1") }}</h2>
+          <h2>{{ $t("title-2") }}</h2>
         </div>
-        <h1 class="font-extrabold lg:text-7xl text-5xl">{{ name }}</h1>
+        <h1 class="font-extrabold lg:text-7xl text-5xl">Theo Henrique</h1>
         <h2 class="lg:text-3xl text-xl font-semibold">
           Full-Stack <span class="text-orange-color">Developer</span>.
         </h2>
         <div class="lg:w-1/2 w-full font-light text-base tracking-wide pb-10 text-gray-100">
-          <p>{{ descryption }}</p>
+          <p>{{ $t("description") }}</p>
         </div>
 
         <div class="flex items-center space-x-2 lg:justify-start justify-center">
@@ -33,9 +33,6 @@
 export default {
   data() {
     return {
-      name: "Theo Henrique",
-      descryption:
-        "Sou um desenvolvedor Full Stack focado em transformar ideias em soluções completas, combinando back-end robusto com interfaces responsivas e funcionais. Meu objetivo é entregar aplicações que não só encantem os usuários pela experiência intuitiva, mas também sejam eficientes e bem estruturadas por trás dos bastidores.",
       buttons_socials: [
         {
           id: 1,

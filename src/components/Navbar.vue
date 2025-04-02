@@ -13,8 +13,12 @@
           :key="item.id"
           :href="item.route_to"
           class="hover:text-orange-color text-gray-100"
-          >{{ item.name }}</a
         >
+          {{ item.name }}
+        </a>
+        <button @click="toggleLanguage">
+          {{ $t("change_language") }}
+        </button>
       </div>
 
       <!-- Mobile Menu Button -->
@@ -39,36 +43,52 @@
     </div>
 
     <!-- Mobile Menu -->
-    <div v-if="menuOpen" class="md:hidden mt-4 space-y-2">
+    <div v-show="menuOpen" class="md:hidden mt-4 space-y-2">
       <a
         v-for="item in items_menu"
         :key="item.id"
         :href="item.route_to"
         class="block px-4 py-2 hover:text-orange-color"
-        >{{ item.name }}</a
       >
+        {{ item.name }}
+      </a>
+      <button @click="toggleLanguage" class="px-4 py-2">
+        <img :src="currentFlag" alt="Change language" class="w-6 h-6 inline" />
+      </button>
     </div>
   </nav>
 </template>
 
 <script>
+import { useI18n } from 'vue-i18n';
+import { ref, computed } from 'vue';
+
 export default {
-  data() {
-    return {
-      items_menu: [
-        { id: 1, name: "Início", route_to: "#home", isAnchor: true },
-        { id: 2, name: "Sobre Mim", route_to: "#sobre" },
-        { id: 3, name: "Serviços", route_to: "#servicos" },
-        { id: 4, name: "Portfólio", route_to: "#portfolio" },
-        { id: 5, name: "Contato", route_to: "#contato" },
-      ],
-      menuOpen: false,
+  setup() {
+    const { locale } = useI18n();
+    const menuOpen = ref(false);
+
+    const currentFlag = computed(() =>
+      locale.value === 'pt' ? '/flags/en.svg' : '/flags/pt.svg'
+    );
+
+    const toggleLanguage = () => {
+      locale.value = locale.value === 'pt' ? 'en' : 'pt';
     };
-  },
-  methods: {
-    toggleMenu() {
-      this.menuOpen = !this.menuOpen;
-    },
-  },
+
+    const toggleMenu = () => {
+      menuOpen.value = !menuOpen.value;
+    };
+
+    const items_menu = ref([
+      { id: 1, name: "Início", route_to: "#home" },
+      { id: 2, name: "Sobre Mim", route_to: "#sobre" },
+      { id: 3, name: "Serviços", route_to: "#servicos" },
+      { id: 4, name: "Portfólio", route_to: "#portfolio" },
+      { id: 5, name: "Contato", route_to: "#contato" },
+    ]);
+
+    return { toggleLanguage, currentFlag, menuOpen, toggleMenu, items_menu };
+  }
 };
 </script>

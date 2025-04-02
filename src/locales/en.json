@@ -1,4 +1,6 @@
 {
-    "welcome": "Welcome to my portfolio",
-    "change_language": "Change language"
-  }
+  "title-1"         : "Hello",
+  "title-2"         : "I am",
+  "description"     : "I am a Full Stack developer focused on transforming ideas into complete solutions, combining a robust back-end with responsive and functional interfaces. My goal is to deliver applications that not only delight users with an intuitive experience but are also efficient and well-structured behind the scenes.",
+  "change_language": "Change language"
+}
