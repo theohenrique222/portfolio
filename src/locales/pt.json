@@ -59,5 +59,11 @@
         "messageLabel": "Em que posso te ajudar?",
         "sendButton": "Enviar Mensagem"
     },
+    "menu": {
+        "home": "Início",
+        "about": "Sobre",
+        "projects": "Projetos",
+        "contact": "Contato"
+    },
     "change_language": "Mudar idioma"
 }

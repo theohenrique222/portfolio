@@ -62,5 +62,11 @@
     "emailAddress": "theodoro222@hotmail.com",
     "instagram": "@theohbezerra_"
   },
+  "menu": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
   "change_language": "Change language"
 }
