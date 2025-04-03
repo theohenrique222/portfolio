@@ -57,10 +57,7 @@
         "email": "Seu endereço de e-mail",
         "phone": "Telefone para contato",
         "messageLabel": "Em que posso te ajudar?",
-        "sendButton": "Enviar Mensagem",
-        "linkedin": "Theodoro Henrique",
-        "emailAddress": "theodoro222@hotmail.com",
-        "instagram": "@theohbezerra_"
+        "sendButton": "Enviar Mensagem"
     },
     "change_language": "Mudar idioma"
 }
