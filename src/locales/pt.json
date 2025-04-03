@@ -39,13 +39,13 @@
         "projects": "Projetos",
         "recent": "Recentes",
         "burgerTitle": "Burger Manager",
-        "burgerContent": "Sistema eficiente para gerenciamento de pedidos em uma hamburgueria...",
+        "burgerContent": "Sistema eficiente para gerenciamento de pedidos em uma hamburgueria, utilizando Vue.js e Tailwind CSS. Com um backend em JSON, o sistema permite o controle ágil de status dos pedidos e uma interface intuitiva, otimizada para a experiência do usuário",
         "smileTitle": "HA Smile Designer",
-        "smileContent": "Landing page moderna e responsiva para um laboratório de prótese dentária...",
+        "smileContent": "Landing page moderna e responsiva para um laboratório de prótese dentária, utilizando Vue.js e Tailwind CSS. O projeto destaca a qualidade dos serviços oferecidos e facilita o contato com os clientes através de um design clean e intuitivo.",
         "nutriTitle": "NutriBase",
-        "nutriContent": "Aplicação web para cálculos nutricionais...",
-        "tasksTitle": "Gerenciador de Tarefas",
-        "tasksContent": "Gerenciador de tarefas simples desenvolvido com JavaScript puro..."
+        "nutriContent": "O NutriBase é uma aplicação web desenvolvida com Vue.js e Tailwind CSS, projetada para calcular a taxa de metabolismo basal (TMB), consumo ideal de proteínas e ingestão diária de água. A ferramenta permite que os usuários insiram seus dados pessoais para obter recomendações personalizadas de nutrição.",
+        "tasksTitle": "portfolio.tasksTitle",
+        "tasksContent": "Um gerenciador de tarefas simples desenvolvido com JavaScript puro, permitindo adicionar, remover e marcar tarefas como concluídas. O projeto utiliza armazenamento local para manter as tarefas salvas mesmo após o fechamento da página. Focado em manipulação do DOM e funcionalidades dinâmicas."
     },
     "contact": {
         "title": "Contate-",

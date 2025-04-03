@@ -1,9 +1,10 @@
 <template>
   <section class="w-full lg:px-0 px-10 bg-black pb-20" id="portfolio">
     <div class="mb-5 text-center text-white pt-10 pb-10">
-      <p class="font-light text-base">Portfólio</p>
+      <p class="font-light text-base">{{ $t("portfolio.title") }}</p>
       <h2 class="font-bold text-4xl">
-        <span class="text-orange-color text-4xl md:text-5xl">Projetos</span> Recentes
+        <span class="text-orange-color text-4xl md:text-5xl">{{ $t("portfolio.projects") }}</span> {{
+          $t("portfolio.recent") }}
       </h2>
     </div>
 
@@ -19,10 +20,11 @@
           <img :src="card.cardImage" :alt="card.cardTitle" class="block w-full" />
           <div
             class="lg:absolute lg:inset-x-[10%] lg:-bottom-5 items-center text-center bg-black/75 rounded-md text-white">
-            <a :href=card.link target="_blank" class="text-xl text-orange-color font-bold underline">{{ card.cardTitle
+            <a :href=card.link target="_blank" class="text-xl text-orange-color font-bold underline">{{
+              $t(card.cardTitle)
               }}
               <ion-icon name="arrow-redo-outline"></ion-icon></a>
-            <p class="text-sm md:text-base">{{ card.cardContent }}</p>
+            <p class="text-sm md:text-base">{{ $t(card.cardContent) }}</p>
           </div>
         </div>
       </div>
@@ -73,35 +75,31 @@ export default {
       cardsContainer: [
         {
           id: 1,
-          cardTitle: "Burger Manager",
+          cardTitle: "portfolio.burgerTitle",
           cardImage: "/img/burger-manager.jpg",
           link: "https://burger-manager.vercel.app/",
-          cardContent:
-            "Sistema eficiente para gerenciamento de pedidos em uma hamburgueria, utilizando Vue.js e Tailwind CSS. Com um backend em JSON, o sistema permite o controle ágil de status dos pedidos e uma interface intuitiva, otimizada para a experiência do usuário",
+          cardContent: "portfolio.burgerContent",
         },
         {
           id: 2,
-          cardTitle: "HA Smile Designer",
+          cardTitle: "portfolio.smileTitle",
           cardImage: "/img/ha-smile-designer.jpg",
           link: "https://smile-designer.vercel.app/",
-          cardContent:
-            "Landing page moderna e responsiva para um laboratório de prótese dentária, utilizando Vue.js e Tailwind CSS. O projeto destaca a qualidade dos serviços oferecidos e facilita o contato com os clientes através de um design clean e intuitivo.",
+          cardContent: "portfolio.smileContent",
         },
         {
           id: 3,
-          cardTitle: "NutriBase",
+          cardTitle: "portfolio.nutriTitle",
           cardImage: "/img/nutri-base.jpg",
           link: "https://nutribase-wheat.vercel.app/",
-          cardContent:
-            "O NutriBase é uma aplicação web desenvolvida com Vue.js e Tailwind CSS, projetada para calcular a taxa de metabolismo basal (TMB), consumo ideal de proteínas e ingestão diária de água. A ferramenta permite que os usuários insiram seus dados pessoais para obter recomendações personalizadas de nutrição.",
+          cardContent: "portfolio.nutriContent",
         },
         {
           id: 4,
           cardTitle: "Gerenciador de Tarefas",
           cardImage: "/img/lista-de-afazeres.jpg",
           link: "",
-          cardContent:
-            "Um gerenciador de tarefas simples desenvolvido com JavaScript puro, permitindo adicionar, remover e marcar tarefas como concluídas. O projeto utiliza armazenamento local para manter as tarefas salvas mesmo após o fechamento da página. Focado em manipulação do DOM e funcionalidades dinâmicas.",
+          cardContent: "portfolio.tasksContent",
         },
       ],
     };
