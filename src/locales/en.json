@@ -13,5 +13,29 @@
   "about-vue": "Vue.js: ",
   "about-vue-desc": "Experience with Vue.js in creating interactive interfaces and engaging mobile applications, focusing on performance and usability.",
   "about-conclusion": "Let's build something amazing together!",
+  "services-intro": "What I specialize in",
+  "services-title-1": "My",
+  "services-title-2": "Services",
+
+  "services-front-title": "Front-End Development",
+  "services-front-content": "Building responsive and functional user interfaces.",
+  "services-front-item-1": "Creating modern and responsive interfaces using Tailwind CSS.",
+  "services-front-item-2": "Developing dynamic SPAs with Vue.js and React.",
+  "services-front-item-3": "User experience (UX/UI) focused design.",
+  "services-front-conclusion": "\"I bring your ideas to life with clean code and efficient design.\"",
+
+  "services-mobile-title": "Mobile Development",
+  "services-mobile-content": "Creating applications for mobile devices with a smooth experience.",
+  "services-mobile-item-1": "Developing native apps with React Native.",
+  "services-mobile-item-2": "Integrating APIs and backend services for robust functionality.",
+  "services-mobile-item-3": "Performance optimization and user experience for iOS and Android.",
+  "services-mobile-conclusion": "\"I develop apps that stand out in the palm of your hand.\"",
+
+  "services-back-title": "Back-End Development",
+  "services-back-content": "Building a solid foundation for your applications.",
+  "services-back-item-1": "Creating APIs and scalable systems with Laravel.",
+  "services-back-item-2": "Implementing authentication, data management, and security.",
+  "services-back-item-3": "Integrating databases and external services.",
+  "services-back-conclusion": "\"I develop powerful backends that ensure efficiency and security for your project.\"",
   "change_language": "Change language"
 }

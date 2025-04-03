@@ -13,5 +13,29 @@
     "about-vue": "Vue.js: ",
     "about-vue-desc": "Experiência com Vue.js na criação de interfaces interativas e aplicações móveis envolventes, focando em performance e usabilidade.",
     "about-conclusion": "Vamos construir algo incrível juntos!",
+    "services-intro": "No que sou especialista",
+    "services-title-1": "Meus",
+    "services-title-2": "Serviços",
+
+    "services-front-title": "Desenvolvimento Front-End",
+    "services-front-content": "Construção de interfaces de usuário responsivas e funcionais.",
+    "services-front-item-1": "Criação de interfaces responsivas e modernas utilizando Tailwind CSS.",
+    "services-front-item-2": "Desenvolvimento de SPAs dinâmicas com Vue.js e React.",
+    "services-front-item-3": "Design centrado na experiência do usuário (UX/UI).",
+    "services-front-conclusion": "\"Trago suas ideias à vida com código limpo e design eficiente.\"",
+
+    "services-mobile-title": "Desenvolvimento Mobile",
+    "services-mobile-content": "Criação de aplicações para dispositivos móveis com experiência fluida.",
+    "services-mobile-item-1": "Desenvolvimento de aplicativos nativos com React Native.",
+    "services-mobile-item-2": "Integração com APIs e serviços backend para funcionalidades robustas.",
+    "services-mobile-item-3": "Otimização de desempenho e experiência do usuário para iOS e Android.",
+    "services-mobile-conclusion": "\"Desenvolvo aplicativos que se destacam na palma da sua mão.\"",
+
+    "services-back-title": "Desenvolvimento Back-End",
+    "services-back-content": "Construindo a fundação sólida para suas aplicações.",
+    "services-back-item-1": "Criação de APIs e sistemas escaláveis com Laravel.",
+    "services-back-item-2": "Implementação de autenticação, gerenciamento de dados e segurança.",
+    "services-back-item-3": "Integração de banco de dados e serviços externos.",
+    "services-back-conclusion": "\"Desenvolvo backends poderosos que garantem a eficiência e a segurança do seu projeto.\"",
     "change_language": "Mudar idioma"
 }
