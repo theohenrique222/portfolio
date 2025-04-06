@@ -1,8 +1,7 @@
 <template>
   <section class="bg-neutral-900" id="contato">
-    <main class="grid lg:px-0 px-10 lg:grid-cols-2 items-center gap-6 py-10 max-w-6xl m-auto" id="contact"
-      data-aos="fade-up" data-aos-duration="3000">
-      <div class="contact-text">
+    <main class="grid lg:px-0 px-10 lg:grid-cols-2 items-center gap-6 py-10 max-w-6xl m-auto" id="contact">
+      <div data-aos="fade-up" data-aos-duration="1000" class="contact-text">
         <h2 class="font-extrabold text-white text-4xl md:text-5xl">
           {{ $t("contact.title") }}<span class="text-orange-color">{{ $t("contact.me") }}</span>
         </h2>
@@ -21,7 +20,7 @@
           </li>
         </div>
       </div>
-      <div class="contact-form">
+      <div data-aos="fade-up" data-aos-duration="3000" class="contact-form">
         <form action="https://formsubmit.co/theodoro222@hotmail.com" method="POST" enctype="text/plain">
           <div v-for="form in form_inputs" :key="form.id" class="relative mb-3 space-y-1">
             <label :for="form.title" class="relative left-0 top-0 ease-out text-white">{{ $t(form.title) }}

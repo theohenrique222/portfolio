@@ -1,10 +1,10 @@
 import { createApp } from 'vue'
-import './style.css'
 import { createI18n } from 'vue-i18n'
 import App from './App.vue'
 import en from './locales/en.json'
 import pt from './locales/pt.json'
 import { Carousel, initTWE, Input } from "tw-elements"
+import './style.css'
 
 const messages = {
   en,
