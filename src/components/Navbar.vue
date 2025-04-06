@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="bg-bneutral-500/70 backdrop-blur text-white fixed top-0 left-0 right-0 p-2 z-50 border-b-2 shadow-2xl shadow-black border-gray-500">
+    class="bg-bneutral-500/70 backdrop-blur text-white fixed top-0 left-0 right-0 p-2 z-50 border-b-2 shadow-2xl border-gray-500/20">
     <div class="container mx-auto flex justify-between items-center max-w-6xl">
 
       <div class="text-4xl font-extrabold">
