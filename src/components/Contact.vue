@@ -38,7 +38,8 @@
           </div>
 
           <button
-            class="inline-block w-full text-white bg-success-500 px-10 p-4 rounded-md hover:bg-success-800 tracking-wider"
+            data-aos="fade-up" data-aos-duration="2000"
+            class="inline-block w-full text-white bg-orange-color px-10 p-4 rounded-md hover:bg-success-800 tracking-wider"
             type="submit">
             {{ $t("contact.sendButton") }}
           </button>

@@ -15,7 +15,7 @@
         </a>
 
       </div>
-      <div>
+      <div class="lg:flex hidden">
         <button @click="toggleLanguage"
           class="flex items-center space-x-2 bg-gray-500/20 px-3 py-1 rounded-md text-sm font-light">
           <img :src="currentFlag" alt="Change language" class="w-6 h-6" />
