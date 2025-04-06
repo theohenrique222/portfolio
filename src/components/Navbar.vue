@@ -8,23 +8,21 @@
             class="text-orange-color">.</span></a>
       </div>
 
-      <!-- Menu Items -->
       <div class="hidden md:flex cursor-pointer space-x-6 items-center text-sm font-light">
         <a v-for="item in items_menu" :key="item.id" :href="item.route_to"
           class="hover:text-orange-color text-gray-100">
           {{ $t(item.name) }}
         </a>
 
-        <!-- Botão de troca de idioma -->
       </div>
       <div>
-        <button @click="toggleLanguage" class="flex items-center space-x-2 bg-gray-500/20 px-3 py-1 rounded-md text-sm font-light">
+        <button @click="toggleLanguage"
+          class="flex items-center space-x-2 bg-gray-500/20 px-3 py-1 rounded-md text-sm font-light">
           <img :src="currentFlag" alt="Change language" class="w-6 h-6" />
           <span>{{ currentLanguage.toUpperCase() }}</span>
         </button>
       </div>
 
-      <!-- Mobile Menu Button -->
       <div class="md:hidden">
         <button @click="toggleMenu">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
@@ -35,7 +33,6 @@
       </div>
     </div>
 
-    <!-- Mobile Menu -->
     <div v-show="menuOpen" class="md:hidden mt-4 space-y-2">
       <a v-for="item in items_menu" :key="item.id" :href="item.route_to"
         class="block px-4 py-2 hover:text-orange-color">
@@ -56,19 +53,25 @@ import { computed } from 'vue';
 export default {
   setup() {
     const { locale } = useI18n();
-
     const flags = {
       en: "https://cdn.pixabay.com/photo/2017/02/01/12/23/usa-2030059_1280.png",
       pt: "https://cdn.pixabay.com/photo/2013/07/12/15/50/brazil-150403_1280.png"
     };
 
+    const changeLanguage = (newLocale) => {
+      localStorage.setItem('locale', newLocale);
+      location.reload();
+    };
+
+    const toggleLanguage = () => {
+      const newLocale = locale.value === 'en' ? 'pt' : 'en';
+      changeLanguage(newLocale);
+    };
+
     return {
       currentLanguage: locale,
       currentFlag: computed(() => flags[locale.value]),
-
-      toggleLanguage() {
-        locale.value = locale.value === "en" ? "pt" : "en";
-      }
+      toggleLanguage,
     };
   },
   data() {
