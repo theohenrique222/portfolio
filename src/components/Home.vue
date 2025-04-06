@@ -1,7 +1,7 @@
 <template>
   <div class="bg-black w-full h-16">
   </div>
-  <section class=" lg:h-[40rem] h-screen bg-center bg-no-repeat bg-black lg:bg-top relative" id="home">
+  <section class="bg-[url('assets/background.jpg')] lg:h-[40rem] h-screen bg-center bg-no-repeat bg-black lg:bg-top relative" id="home">
     <main class="lg:max-w-6xl max-w-sm mx-auto">
       <div class="flex-col lg:top-40 top-24 space-y-10 lg:space-y-4 text-white absolute text-2xl font-semibold px-3">
         <div class="flex flex-1 space-x-3">
