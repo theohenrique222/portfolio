@@ -6,6 +6,14 @@ import pt from './locales/pt.json'
 import { Carousel, initTWE, Input } from "tw-elements"
 import './style.css'
 
+import PrimeVue from 'primevue/config';
+import Aura from '@primeuix/themes/aura';
+
+
+import InputMask from 'primevue/inputmask';
+
+
+
 const messages = {
   en,
   pt
@@ -17,8 +25,16 @@ const i18n = createI18n({
   messages,
 })
 
-const app = createApp(App)
-app.use(i18n)
+const app = createApp(App);
+app.use(i18n);
+app.use(PrimeVue, {
+  theme: {
+    preset: Aura
+  }
+});
+
+app.component('InputMask', InputMask)
+
 
 app.mixin({
   mounted() {
