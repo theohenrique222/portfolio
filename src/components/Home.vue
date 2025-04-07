@@ -15,8 +15,8 @@
         <div data-aos="fade-up" data-aos-duration="2000" class="lg:w-1/2 w-full font-light text-base pb-10 text-gray-100 tracking-widest">
           <p>{{ $t("description") }}</p>
         </div>
-        <div class="flex items-center space-x-2 lg:justify-start justify-center">
-          <a data-aos="fade-up" data-aos-duration="3000" v-for="button in buttons_socials" :key="button.id" :href="button.button_href"
+        <div data-aos="fade-up" data-aos-duration="2000" class="flex items-center space-x-2 lg:justify-start justify-center">
+          <a v-for="button in buttons_socials" :key="button.id" :href="button.button_href"
             class="flex items-center px-9 py-3 text-base font-medium uppercase rounded-md" :class="button.colors"
             target="_blank">
             {{ button.name }}
