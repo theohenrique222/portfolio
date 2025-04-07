@@ -5,14 +5,13 @@ import en from './locales/en.json'
 import pt from './locales/pt.json'
 import { Carousel, initTWE, Input } from "tw-elements"
 import './style.css'
-
 import PrimeVue from 'primevue/config';
 import Aura from '@primeuix/themes/aura';
-
-
+import Card from 'primevue/card';
 import InputMask from 'primevue/inputmask';
-
-
+import Image from 'primevue/image';
+import Button from 'primevue/button';
+import 'primeicons/primeicons.css'
 
 const messages = {
   en,
@@ -34,7 +33,9 @@ app.use(PrimeVue, {
 });
 
 app.component('InputMask', InputMask)
-
+app.component('Image', Image)
+app.component('Card', Card)
+app.component('Button', Button)
 
 app.mixin({
   mounted() {

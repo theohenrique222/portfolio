@@ -15,8 +15,8 @@ import '../node_modules/vue-preloader/dist/style.css'
 <template>
   <VuePreloader background-color="#1d1e1e" class="text-white" transition-type="fade-up" :loading-speed="25"
     :transition-speed="1400" @loading-is-over="loadingIsOver" @transition-is-over="transitionIsOver">
-    <span>
-      {{ $t("welcome") }}
+    <span class="flex items-center gap-2 text-xl">
+      {{ $t("welcome") }} <i class="pi pi-spin pi-spinner" style="font-size: 1.5rem"></i>
     </span>
   </VuePreloader>
   <Navbar />
