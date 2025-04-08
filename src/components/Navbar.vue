@@ -40,7 +40,7 @@
       </a>
       <button @click="toggleLanguage" class="flex items-center space-x-2 px-4 py-2">
         <img :src="currentFlag" alt="Change language" class="w-6 h-6" />
-        <span>{{ currentLanguage.toUpperCase() }}</span>
+        <span>{{ $t("name") }}</span>
       </button>
     </div>
   </nav>
