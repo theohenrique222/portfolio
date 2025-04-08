@@ -7,7 +7,7 @@
                 $t("portfolio.recent") }}
             </h2>
           </div>
-        <div class="grid grid-cols-2 max-w-6xl m-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 max-w-6xl m-auto">
             <Card v-for="card in cardsContainer" :key="card.id" data-aos="fade-up" data-aos-duration="2000"  class="overflow-hidden w-11/12 text-center m-auto mb-5">
                 <template #header>
                     <Image :src="card.cardImage" :alt="card.cardTitle" preview />
