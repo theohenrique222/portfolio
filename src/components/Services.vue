@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[url('public/img/bg2.jpg')] flex items-center justify-center" id="servicos">
+  <div class="bg-[url('public/img/bg2.jpg')] flex items-center justify-center" id="services">
     <div class="container mx-auto py-8 max-w-6xl lg:px-0 px-5">
       <div class="text-center text-white mb-20 mt-10">
         <h3 data-aos="fade-up" data-aos-duration="2000" class="font-extralight">{{ $t("services-intro") }}</h3>

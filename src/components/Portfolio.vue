@@ -1,5 +1,5 @@
 <template>
-    <section class="bg-[url('public/img/bg3.jpg')] w-full bg-fixed bg-no-repeat bg-cover">
+    <section class="bg-[url('public/img/bg3.jpg')] w-full bg-fixed bg-no-repeat bg-cover" id="portfolio">
         <div class="pt-14 mb-20 text-center text-white">
             <p data-aos="fade-up" data-aos-duration="2000"  class="font-light text-base">{{ $t("portfolio.title") }}</p>
             <h2 data-aos="fade-up" data-aos-duration="2000"  class="font-bold text-4xl">

@@ -80,7 +80,8 @@ export default {
       items_menu: [
         { id: 1, name: "menu.home", route_to: "/" },
         { id: 2, name: "menu.about", route_to: "#about" },
-        { id: 3, name: "menu.projects", route_to: "#projects" },
+        { id: 3, name: "menu.projects", route_to: "#services" },
+        { id: 3, name: "menu.portfolio", route_to: "#portfolio" },
         { id: 4, name: "menu.contact", route_to: "#contact" }
       ],
     };

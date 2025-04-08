@@ -41,13 +41,13 @@
     "projects": "Projects",
     "recent": "Recent",
     "burgerTitle": "Burger Manager",
-    "burgerContent": "Efficient system for managing orders in a burger restaurant...",
+    "burgerContent": "An efficient order management system for a burger restaurant, built with Vue.js and Tailwind CSS. Featuring a JSON-based backend, the system offers quick status control and an intuitive interface optimized for user experience.",
     "smileTitle": "HA Smile Designer",
-    "smileContent": "Modern and responsive landing page for a dental prosthesis laboratory...",
+    "smileContent": "A modern, responsive landing page for a dental prosthetics lab, built with Vue.js and Tailwind CSS. The project highlights the quality of services offered and makes it easy for clients to get in touch through a clean and intuitive design.",
     "nutriTitle": "NutriBase",
-    "nutriContent": "Web application for nutritional calculations...",
+    "nutriContent": "NutriBase is a web application developed with Vue.js and Tailwind CSS, designed to calculate Basal Metabolic Rate (BMR), ideal protein intake, and daily water consumption. Users can input personal data to receive personalized nutrition recommendations.",
     "tasksTitle": "Task Manager",
-    "tasksContent": "A simple task manager developed with pure JavaScript..."
+    "tasksContent": "A simple task manager built with vanilla JavaScript, allowing users to add, remove, and mark tasks as completed. The project uses local storage to save tasks even after the page is closed, focusing on DOM manipulation and dynamic functionality."
   },
   "contact": {
     "title": "Contact-",
@@ -68,6 +68,7 @@
     "home": "Home",
     "about": "About",
     "projects": "Projects",
+    "portfolio": "Portfólio",
     "contact": "Contact"
   },
   "change_language": "Change language"
