@@ -1,7 +1,14 @@
 <template>
-    <section class="bg-neutral-950 w-full">
-        <div class="grid grid-cols-2 max-w-6xl m-auto py-20">
-            <Card v-for="card in cardsContainer" :key="card.id" class="overflow-hidden w-11/12 text-center m-auto mb-5">
+    <section class="bg-[url('public/img/bg3.jpg')] w-full bg-fixed bg-no-repeat bg-cover">
+        <div class="pt-14 mb-20 text-center text-white">
+            <p data-aos="fade-up" data-aos-duration="2000"  class="font-light text-base">{{ $t("portfolio.title") }}</p>
+            <h2 data-aos="fade-up" data-aos-duration="2000"  class="font-bold text-4xl">
+              <span class="text-orange-color text-4xl md:text-5xl">{{ $t("portfolio.projects") }}</span> {{
+                $t("portfolio.recent") }}
+            </h2>
+          </div>
+        <div class="grid grid-cols-2 max-w-6xl m-auto">
+            <Card v-for="card in cardsContainer" :key="card.id" data-aos="fade-up" data-aos-duration="2000"  class="overflow-hidden w-11/12 text-center m-auto mb-5">
                 <template #header>
                     <Image :src="card.cardImage" :alt="card.cardTitle" preview />
                 </template>
@@ -10,7 +17,6 @@
                         {{ $t(card.cardTitle) }}
                     </p>
                 </template>
-                <!-- <template #subtitle>Card subtitle</template> -->
                 <template #content>
                     <p class="m-0 font-light text-center">
                         {{ $t(card.cardContent) }}
