@@ -23,7 +23,7 @@
                     </p>
                 </template>
                 <template #footer>
-                    <div class="flex gap-4 mt-1 justify-center">
+                    <div class="flex gap-4 mt-3 justify-center">
                         <a class="flex justify-center text-base items-center gap-2 bg-transparent hover:bg-neutral-100 hover:text-neutral-950 w-44 h-12 rounded-md border border-neutral-400 transition-all"
                             href="#">
                             Repositório<i class="pi pi-github" style="font-size: 1.5rem"></i>

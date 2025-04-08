@@ -12,6 +12,7 @@ import InputMask from 'primevue/inputmask';
 import Image from 'primevue/image';
 import Button from 'primevue/button';
 import 'primeicons/primeicons.css'
+import AnimateOnScroll from 'primevue/animateonscroll';
 
 const messages = {
   en,
@@ -32,6 +33,7 @@ app.use(PrimeVue, {
   }
 });
 
+app.directive('animateonscroll', AnimateOnScroll);
 app.component('InputMask', InputMask)
 app.component('Image', Image)
 app.component('Card', Card)

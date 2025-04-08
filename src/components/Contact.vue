@@ -20,7 +20,7 @@
           </li>
         </div>
       </div>
-      <div data-aos="fade-up" data-aos-duration="3000" class="contact-form">
+      <div data-aos="fade-up" data-aos-duration="1000" class="contact-form">
         <form action="https://formsubmit.co/theodoro222@hotmail.com" method="POST" enctype="text/plain">
           <div v-for="form in form_inputs" :key="form.id" class="relative mb-3 space-y-1">
             <label :for="form.title" class="relative left-0 top-0 ease-out text-white">{{ $t(form.title) }}
@@ -36,9 +36,8 @@
             <textarea name="mensagem: " id="textarea" rows="3"
               class="h-60 block w-full rounded resize-none bg-neutral-800 text-white p-3"></textarea>
           </div>
-
           <button
-            data-aos="fade-up" data-aos-duration="3000"
+            
             class="inline-block w-full text-white bg-orange-color px-10 p-4 rounded-md hover:bg-success-800 tracking-wider"
             type="submit">
             {{ $t("contact.sendButton") }}
