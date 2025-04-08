@@ -6,16 +6,16 @@
           <h2 class="bg-orange-color px-3 rounded-md">{{ $t("title-1") }}</h2>
           <h2>{{ $t("title-2") }}</h2>
         </div>
-        <div data-aos="fade-up" data-aos-duration="2000" class="space-y-3">
+        <div data-aos="fade-up" data-aos-duration="1000" class="space-y-3">
           <h2 class="font-extrabold lg:text-7xl text-5xl">Theo Henrique</h2>
           <h2 class="lg:text-3xl text-xl font-semibold">
             Full-Stack <span class="text-orange-color">Developer</span>.
           </h2>
         </div>
-        <div data-aos="fade-up" data-aos-duration="2000" class="lg:w-1/2 w-full font-light text-base pb-10 text-gray-100 tracking-widest">
+        <div data-aos="fade-up" data-aos-duration="1000" class="lg:w-1/2 w-full font-light text-base pb-10 text-gray-100 tracking-widest">
           <p>{{ $t("description") }}</p>
         </div>
-        <div data-aos="fade-up" data-aos-duration="2000" class="flex items-center space-x-2 lg:justify-start justify-center">
+        <div class="flex items-center space-x-2 lg:justify-start justify-center">
           <a v-for="button in buttons_socials" :key="button.id" :href="button.button_href"
             class="flex items-center px-9 py-3 text-base font-medium uppercase rounded-md" :class="button.colors"
             target="_blank">
