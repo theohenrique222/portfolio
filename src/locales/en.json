@@ -47,7 +47,9 @@
     "nutriTitle": "NutriBase",
     "nutriContent": "NutriBase is a web application developed with Vue.js and Tailwind CSS, designed to calculate Basal Metabolic Rate (BMR), ideal protein intake, and daily water consumption. Users can input personal data to receive personalized nutrition recommendations.",
     "tasksTitle": "Task Manager",
-    "tasksContent": "A simple task manager built with vanilla JavaScript, allowing users to add, remove, and mark tasks as completed. The project uses local storage to save tasks even after the page is closed, focusing on DOM manipulation and dynamic functionality."
+    "tasksContent": "A simple task manager built with vanilla JavaScript, allowing users to add, remove, and mark tasks as completed. The project uses local storage to save tasks even after the page is closed, focusing on DOM manipulation and dynamic functionality.",
+    "flexTitle": "FlexSales",
+    "flexContent": "Sales management system with customizable payment methods and management of clients, sellers, and products. Technologies: Laravel, AdminLTE, JavaScript, MySQL"
   },
   "contact": {
     "title": "Contact-",

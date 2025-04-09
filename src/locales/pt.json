@@ -47,7 +47,9 @@
         "nutriTitle": "NutriBase",
         "nutriContent": "O NutriBase é uma aplicação web desenvolvida com Vue.js e Tailwind CSS, projetada para calcular a taxa de metabolismo basal (TMB), consumo ideal de proteínas e ingestão diária de água. A ferramenta permite que os usuários insiram seus dados pessoais para obter recomendações personalizadas de nutrição.",
         "tasksTitle": "portfolio.tasksTitle",
-        "tasksContent": "Um gerenciador de tarefas simples desenvolvido com JavaScript puro, permitindo adicionar, remover e marcar tarefas como concluídas. O projeto utiliza armazenamento local para manter as tarefas salvas mesmo após o fechamento da página. Focado em manipulação do DOM e funcionalidades dinâmicas."
+        "tasksContent": "Um gerenciador de tarefas simples desenvolvido com JavaScript puro, permitindo adicionar, remover e marcar tarefas como concluídas. O projeto utiliza armazenamento local para manter as tarefas salvas mesmo após o fechamento da página. Focado em manipulação do DOM e funcionalidades dinâmicas.",
+        "flexTitle": "FlexSales",
+        "flexContent": "Sistema de controle de vendas com gerenciamento de clientes, vendedores, produtos e formas de pagamento personalizáveis Tecnologias: Laravel, AdminLTE, JavaScript, MySQL"
     },
     "contact": {
         "title": "Contate-",

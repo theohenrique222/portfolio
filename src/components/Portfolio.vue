@@ -78,6 +78,14 @@ export default {
                     repositorio: "",
                     cardContent: "portfolio.tasksContent",
                 },
+                {
+                    id: 5,
+                    cardTitle: "portfolio.flexTitle",
+                    cardImage: "/img/flex-sales.jpg",
+                    link: "",
+                    repositorio: "",
+                    cardContent: "portfolio.flexContent",
+                },
             ],
         };
     },
