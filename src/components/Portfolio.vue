@@ -94,7 +94,7 @@ export default {
                     cardTitle: "portfolio.generatorTitle",
                     cardImage: "/img/password-generator.jpg",
                     link: "",
-                    repositorio: "",
+                    repositorio: "https://github.com/theohenrique222/password-generator.git",
                     cardContent: "portfolio.generatorContent",
                 },
             ],
