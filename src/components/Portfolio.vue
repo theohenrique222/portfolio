@@ -1,14 +1,15 @@
 <template>
     <section class="bg-[url('public/img/bg3.jpg')] w-full bg-fixed bg-no-repeat bg-cover" id="portfolio">
         <div class="pt-14 mb-20 text-center text-white">
-            <p data-aos="fade-up" data-aos-duration="2000"  class="font-light text-base">{{ $t("portfolio.title") }}</p>
-            <h2 data-aos="fade-up" data-aos-duration="2000"  class="font-bold text-4xl">
-              <span class="text-orange-color text-4xl md:text-5xl">{{ $t("portfolio.projects") }}</span> {{
-                $t("portfolio.recent") }}
+            <p data-aos="fade-up" data-aos-duration="2000" class="font-light text-base">{{ $t("portfolio.title") }}</p>
+            <h2 data-aos="fade-up" data-aos-duration="2000" class="font-bold text-4xl">
+                <span class="text-orange-color text-4xl md:text-5xl">{{ $t("portfolio.projects") }}</span> {{
+                    $t("portfolio.recent") }}
             </h2>
-          </div>
+        </div>
         <div class="grid grid-cols-1 md:grid-cols-2 max-w-6xl m-auto">
-            <Card v-for="card in cardsContainer" :key="card.id" data-aos="fade-up" data-aos-duration="2000"  class="overflow-hidden w-11/12 text-center m-auto mb-5">
+            <Card v-for="card in cardsContainer" :key="card.id" data-aos="fade-up" data-aos-duration="2000"
+                class="overflow-hidden w-11/12 text-center m-auto mb-5">
                 <template #header>
                     <Image :src="card.cardImage" :alt="card.cardTitle" preview />
                 </template>
@@ -25,12 +26,14 @@
                 <template #footer>
                     <div class="flex gap-4 mt-3 justify-center">
                         <a class="flex justify-center text-base items-center gap-2 bg-transparent hover:bg-neutral-100 hover:text-neutral-950 w-44 h-12 rounded-md border border-neutral-400 transition-all"
-                            href="#">
+                            target="_blank" :href=card.repositorio>
                             Repositório<i class="pi pi-github" style="font-size: 1.5rem"></i>
                         </a>
-                        <a class="flex justify-center text-base items-center gap-2 bg-orange-color hover:bg-neutral-100 hover:text-black w-44 rounded-md"
-                            :href=card.link>
-                            Ver Projeto<i class="pi pi-external-link" style="font-size: 1rem"></i>
+                        <a class="flex justify-center text-base items-center gap-2 w-44 rounded-md" :class="[
+                            card.link ? 'bg-orange-color hover:bg-neutral-100 hover:text-black' : 'cursor-not-allowed bg-orange-700 opacity-60 pointer-events-none'
+                        ]" :href="card.link || '#'" :target="card.link ? '_blank' : null">
+                            Ver Projeto
+                            <i class="pi pi-external-link" style="font-size: 1rem"></i>
                         </a>
                     </div>
                 </template>
@@ -83,8 +86,16 @@ export default {
                     cardTitle: "portfolio.flexTitle",
                     cardImage: "/img/flex-sales.jpg",
                     link: "",
-                    repositorio: "",
+                    repositorio: "https://github.com/theohenrique222/FlexSales.git",
                     cardContent: "portfolio.flexContent",
+                },
+                {
+                    id: 6,
+                    cardTitle: "portfolio.generatorTitle",
+                    cardImage: "/img/password-generator.jpg",
+                    link: "",
+                    repositorio: "",
+                    cardContent: "portfolio.generatorContent",
                 },
             ],
         };

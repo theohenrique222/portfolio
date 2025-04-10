@@ -49,7 +49,9 @@
     "tasksTitle": "Task Manager",
     "tasksContent": "A simple task manager built with vanilla JavaScript, allowing users to add, remove, and mark tasks as completed. The project uses local storage to save tasks even after the page is closed, focusing on DOM manipulation and dynamic functionality.",
     "flexTitle": "FlexSales",
-    "flexContent": "Sales management system with customizable payment methods and management of clients, sellers, and products. Technologies: Laravel, AdminLTE, JavaScript, MySQL"
+    "flexContent": "Sales management system with customizable payment methods and management of clients, sellers, and products. Technologies: Laravel, AdminLTE, JavaScript, MySQL",
+    "generatorTitle": "Password Generator",
+    "generatorContent": "Random password generator. Technologies: React Native, Tailwind CSS."
   },
   "contact": {
     "title": "Contact-",
