@@ -51,7 +51,7 @@
     "flexTitle": "FlexSales",
     "flexContent": "Sales management system with customizable payment methods and management of clients, sellers, and products. Technologies: Laravel, AdminLTE, JavaScript, MySQL",
     "generatorTitle": "Password Generator",
-    "generatorContent": "Random password generator. Technologies: React Native, Tailwind CSS."
+    "generatorContent": "Secure password generator app with customization options such as length, uppercase/lowercase letters, numbers, and symbols. Lightweight and intuitive interface. Technologies: React Native, Tailwind CSS"
   },
   "contact": {
     "title": "Contact-",

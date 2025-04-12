@@ -9,10 +9,11 @@
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 max-w-6xl m-auto">
             <Card v-for="card in cardsContainer" :key="card.id" data-aos="fade-up" data-aos-duration="2000"
-                class="overflow-hidden w-11/12 text-center m-auto mb-5">
+                class="overflow-hidden w-11/12 text-center m-auto mb-5 bg-red-400">
                 <template #header>
-                    <Image :src="card.cardImage" :alt="card.cardTitle" preview />
+                    <Image style="max-height: 25rem;" :class=card.class :src="card.cardImage" :alt="card.cardTitle" preview />
                 </template>
+
                 <template #title>
                     <p class="text-orange-color font-bold text-2xl">
                         {{ $t(card.cardTitle) }}
@@ -95,7 +96,7 @@ export default {
                     cardImage: "/img/password-generator.jpg",
                     link: "",
                     repositorio: "https://github.com/theohenrique222/password-generator.git",
-                    cardContent: "portfolio.generatorContent",
+                    cardContent: "portfolio.generatorContent",                    
                 },
             ],
         };
@@ -103,4 +104,6 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+    
+</style>
