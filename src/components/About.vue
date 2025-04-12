@@ -26,7 +26,7 @@
               {{ $t(tecnologie.content) }}
             </li>
           </ul>
-          <span data-aos="fade-up" data-aos-duration="2000" class="text-2xl font-bold text-orange-500">
+          <span class="text-2xl font-bold text-orange-500">
             {{ $t("about-conclusion") }}
           </span>
         </div>
@@ -43,8 +43,8 @@ export default {
       name_image: "Theo Henrique",
       tecnologies: [
         { name: "about-laravel", content: "about-laravel-desc" },
+        { name: "about-vue", content: "about-vue-desc" },
         { name: "about-tailwind", content: "about-tailwind-desc" },
-        { name: "about-vue", content: "about-vue-desc" }
       ]
     };
   }
