@@ -13,6 +13,9 @@ import Image from 'primevue/image';
 import Button from 'primevue/button';
 import 'primeicons/primeicons.css'
 import AnimateOnScroll from 'primevue/animateonscroll';
+import MultiSelect from 'primevue/multiselect';
+import Select from 'primevue/select';
+
 
 const messages = {
   en,
@@ -38,6 +41,8 @@ app.component('InputMask', InputMask)
 app.component('Image', Image)
 app.component('Card', Card)
 app.component('Button', Button)
+app.component('MultiSelect', MultiSelect)
+app.component('Select', Select)
 
 app.mixin({
   mounted() {

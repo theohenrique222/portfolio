@@ -37,6 +37,7 @@
   "services-back-item-3": "Integrating databases and external services.",
   "services-back-conclusion": "\"I develop powerful backends that ensure efficiency and security for your project.\"",
   "portfolio": {
+    "filter": "Filter by Technology",
     "title": "Portfolio",
     "projects": "Projects",
     "recent": "Recent",
