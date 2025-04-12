@@ -12,13 +12,13 @@
         
         <div class="flex flex-col lg:px-0 px-8 md:w-1/2 pb-10">
           <h1 data-aos="fade-up" data-aos-duration="2000" class="font-extrabold text-4xl md:text-5xl mb-5 text-white">
-            {{ $t("about-1") }} <span class="text-orange-500">{{ $t("about-2") }}</span>
+            {{ $t("about.title1") }} <span class="text-orange-500">{{ $t("about.title2") }}</span>
           </h1>
-          <h2 data-aos="fade-up" data-aos-duration="2000" class="font-semibold text-lg md:text-xl mb-5 text-gray-300">
-            {{ $t("about-3") }}
+          <h2 data-aos="fade-up" data-aos-duration="2000" class="font-semibold text-lg md:text-xl mb-5 text-orange-color">
+            {{ $t("about.subtitle") }}
           </h2>
           <h3 data-aos="fade-up" data-aos-duration="2000" class="tracking-widest font-light text-base mb-5 text-gray-300">
-            {{ $t("about-4") }}
+            {{ $t("about.description") }}
           </h3>
           <ul data-aos="fade-up" data-aos-duration="2000" class="tracking-widest font-light text-base mb-5 text-gray-300">
             <li v-for="tecnologie in tecnologies" :key="tecnologie.name" class="mb-2">
@@ -27,7 +27,7 @@
             </li>
           </ul>
           <span class="text-2xl font-bold text-orange-500">
-            {{ $t("about-conclusion") }}
+            {{ $t("about.conclusion") }}
           </span>
         </div>
       </main>
@@ -42,9 +42,10 @@ export default {
       image_src: "/img/avatar.png",
       name_image: "Theo Henrique",
       tecnologies: [
-        { name: "about-laravel", content: "about-laravel-desc" },
-        { name: "about-vue", content: "about-vue-desc" },
-        { name: "about-tailwind", content: "about-tailwind-desc" },
+        { name: "about.laravelTitle", content: "about.laravelContent" },
+        { name: "about.vueTitle", content: "about.vueContent" },
+        { name: "about.reactTitle", content: "about.reactContent" },
+        { name: "about.tailwindTitle", content: "about.tailwindContent" },
       ]
     };
   }
