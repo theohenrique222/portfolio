@@ -58,13 +58,10 @@ export default {
             selectedTech: null,
             allTechnologies: [
                 "Laravel",
-                "Filament",
-                "MySQL",
                 "Vue.js",
                 "React Native",
                 "Tailwind CSS",
                 "JavaScript",
-                "AdminLTE",
                 "Json",
             ],
             cardsContainer: [
