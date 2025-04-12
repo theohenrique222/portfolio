@@ -51,7 +51,9 @@
         "flexTitle": "FlexSales",
         "flexContent": "Sistema de controle de vendas com gerenciamento de clientes, vendedores, produtos e formas de pagamento personalizáveis. Tecnologias: Laravel, AdminLTE, JavaScript, MySQL",
         "generatorTitle": "Gerador de Senhas",
-        "generatorContent": "Aplicativo para geração de senhas seguras com opções de personalização como tamanho, letras maiúsculas/minúsculas, números e símbolos. Interface leve e intuitiva. Tecnologias: React Native, Tailwind CSS"
+        "generatorContent": "Aplicativo para geração de senhas seguras com opções de personalização como tamanho, letras maiúsculas, minúsculas, números e símbolos. Interface leve e intuitiva. Tecnologias: React Native, Tailwind CSS",
+        "dentalTitle": "Dental Lab",
+        "dentalContent": "Sistema de controle de tabela de preços para laboratório de próteses dentárias, com backend administrativo e frontend público e responsivo. Tecnologias: Laravel, Filament, MySQL, VueJs, Tailwind CSS"
     },
     "contact": {
         "title": "Contate-",

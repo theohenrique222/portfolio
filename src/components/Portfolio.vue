@@ -20,9 +20,11 @@
                     </p>
                 </template>
                 <template #content>
-                    <p class="m-0 font-light text-center">
-                        {{ $t(card.cardContent) }}
-                    </p>
+                    <div class="min-h-24">
+                        <p class="m-0 font-light text-center">
+                            {{ $t(card.cardContent) }}
+                        </p>
+                    </div>
                 </template>
                 <template #footer>
                     <div class="flex gap-4 mt-3 justify-center">
@@ -51,6 +53,22 @@ export default {
             currentIndex: 0,
             cardsContainer: [
                 {
+                    id: 5,
+                    cardTitle: "portfolio.flexTitle",
+                    cardImage: "/img/flex-sales.jpg",
+                    link: "",
+                    repositorio: "https://github.com/theohenrique222/FlexSales.git",
+                    cardContent: "portfolio.flexContent",
+                },
+                {
+                    id: 3,
+                    cardTitle: "portfolio.nutriTitle",
+                    cardImage: "/img/nutri-base.jpg",
+                    link: "https://nutribase-wheat.vercel.app/",
+                    repositorio: "https://github.com/theohenrique222/nutribase.git",
+                    cardContent: "portfolio.nutriContent",
+                },
+                {
                     id: 1,
                     cardTitle: "portfolio.burgerTitle",
                     cardImage: "/img/burger-manager.jpg",
@@ -66,13 +84,23 @@ export default {
                     repositorio: "https://github.com/theohenrique222/smile-designer.git",
                     cardContent: "portfolio.smileContent",
                 },
+                
+                
                 {
-                    id: 3,
-                    cardTitle: "portfolio.nutriTitle",
-                    cardImage: "/img/nutri-base.jpg",
-                    link: "https://nutribase-wheat.vercel.app/",
-                    repositorio: "https://github.com/theohenrique222/nutribase.git",
-                    cardContent: "portfolio.nutriContent",
+                    id: 6,
+                    cardTitle: "portfolio.generatorTitle",
+                    cardImage: "/img/password-generator.jpg",
+                    link: "",
+                    repositorio: "https://github.com/theohenrique222/password-generator.git",
+                    cardContent: "portfolio.generatorContent",                    
+                },
+                {
+                    id: 7,
+                    cardTitle: "portfolio.dentalTitle",
+                    cardImage: "/img/dental-lab.jpg",
+                    link: "",
+                    repositorio: "https://github.com/theohenrique222/password-generator.git",
+                    cardContent: "portfolio.dentalContent",                    
                 },
                 {
                     id: 4,
@@ -81,22 +109,6 @@ export default {
                     link: "",
                     repositorio: "",
                     cardContent: "portfolio.tasksContent",
-                },
-                {
-                    id: 5,
-                    cardTitle: "portfolio.flexTitle",
-                    cardImage: "/img/flex-sales.jpg",
-                    link: "",
-                    repositorio: "https://github.com/theohenrique222/FlexSales.git",
-                    cardContent: "portfolio.flexContent",
-                },
-                {
-                    id: 6,
-                    cardTitle: "portfolio.generatorTitle",
-                    cardImage: "/img/password-generator.jpg",
-                    link: "",
-                    repositorio: "https://github.com/theohenrique222/password-generator.git",
-                    cardContent: "portfolio.generatorContent",                    
                 },
             ],
         };
