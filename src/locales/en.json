@@ -1,8 +1,8 @@
 {
   "name": "USA",
-  "welcome": "Helo, Welcome To My Portfólio",
+  "welcome": "Hello, Welcome To My Portfólio",
   "title-1": "Hello",
-  "title-2": "I am",
+  "title-2": "I'am",
   "description": "I am a Full Stack developer focused on transforming ideas into complete solutions, combining a robust back-end with responsive and functional interfaces. My goal is to deliver applications that not only delight users with an intuitive experience but are also efficient and well-structured behind the scenes.",
   "about": {
     "title1": "About",
@@ -58,7 +58,9 @@
     "generatorTitle": "Password Generator",
     "generatorContent": "Secure password generator app with customization options such as length, uppercase/lowercase letters, numbers, and symbols. Lightweight and intuitive interface. Technologies: React Native, Tailwind CSS",
     "dentalTitle": "Dental Lab",
-    "dentalContent": "Price table management system for dental prosthetics laboratories, featuring an admin backend and a public, responsive frontend. Technologies: Laravel, Filament, MySQL, Vue.js, Tailwind CSS"
+    "dentalContent": "Price table management system for dental prosthetics laboratories, featuring an admin backend and a public, responsive frontend. Technologies: Laravel, Filament, MySQL, Vue.js, Tailwind CSS",
+    "jsonTitle": "JSON Server",
+    "jsonContent": "RESTful API developed with JSON Server to simulate the backend of a burger shop application. It uses a JSON-based structure to manage data such as products, orders, and customers, streamlining front-end development and testing with speed and efficiency."
   },
   "contact": {
     "title": "Contact-",

@@ -121,6 +121,15 @@ export default {
                 },
                 {
                     id: 7,
+                    cardTitle: "portfolio.jsonTitle",
+                    cardImage: "/img/json-server.jpg",
+                    link: "",
+                    repositorio: "",
+                    cardContent: "portfolio.jsonContent",
+                    technologies: ["JavaScript", "HTML", "CSS"]
+                },
+                {
+                    id: 8,
                     cardTitle: "Gerenciador de Tarefas",
                     cardImage: "/img/lista-de-afazeres.jpg",
                     link: "",

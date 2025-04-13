@@ -3,7 +3,7 @@
     "welcome": "Olá, Bem vindo ao meu Portfólio",
     "title-1": "Olá",
     "title-2": "Eu sou",
-    "description": "Sou um desenvolvedor Full Stack focado em transformar ideias em soluções completas, combinando back-end robusto com interfaces responsivas e funcionais. Meu objetivo é entregar aplicações que não só encantem os usuários pela experiência intuitiva, mas também sejam eficientes e bem estruturadas por trás dos bastidores.",
+    "description": "Desenvolvedor Full Stack com foco em transformar ideias em soluções digitais completas. Uno back-ends robustos a interfaces responsivas e funcionais, visando entregar aplicações intuitivas, bem estruturadas e com alto desempenho, tanto na experiência do usuário quanto na arquitetura técnica.",
     "about": {
         "title1": "Sobre",
         "title2": "Mim",
@@ -58,7 +58,9 @@
         "generatorTitle": "Gerador de Senhas",
         "generatorContent": "Aplicativo para geração de senhas seguras com opções de personalização como tamanho, letras maiúsculas, minúsculas, números e símbolos. Interface leve e intuitiva. Tecnologias: React Native, Tailwind CSS",
         "dentalTitle": "Dental Lab",
-        "dentalContent": "Sistema de controle de tabela de preços para laboratório de próteses dentárias, com backend administrativo e frontend público e responsivo. Tecnologias: Laravel, Filament, MySQL, VueJs, Tailwind CSS"
+        "dentalContent": "Sistema de controle de tabela de preços para laboratório de próteses dentárias, com backend administrativo e frontend público e responsivo. Tecnologias: Laravel, Filament, MySQL, VueJs, Tailwind CSS",
+        "jsonTitle": "JSON Server",
+        "jsonContent": "API RESTful desenvolvida com JSON Server para simular o backend de um aplicativo de hamburgueria. Utiliza estrutura em JSON para gerenciamento de dados como produtos, pedidos e clientes, facilitando o desenvolvimento e testes do front-end de forma rápida e eficiente."
     },
     "contact": {
         "title": "Contate-",
