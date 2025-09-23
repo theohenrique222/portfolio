@@ -17,7 +17,7 @@
         </div>
         <div class="flex items-center space-x-2 lg:justify-start justify-center">
           <a v-for="button in buttons_socials" :key="button.id" :href="button.button_href"
-            class="flex items-center px-9 py-3 text-base font-medium uppercase rounded-md" :class="button.colors"
+            class="flex items-center px-9 py-3 text-base font-medium uppercase rounded-md hover:opacity-70" :class="button.colors"
             target="_blank">
             {{ button.name }}
             <ion-icon class="text-2xl ml-2" :name="button.name_icon"></ion-icon>
