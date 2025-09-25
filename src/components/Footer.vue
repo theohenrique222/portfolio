@@ -2,8 +2,8 @@
   <footer
     class="flex flex-col items-center bg-neutral-500 text-center"
   >
-    <div class="container pt-9">
-      <div class="mb-6 flex justify-center space-x-2">
+    <div class="container pt-5">
+      <div class="mb-5 flex justify-center space-x-2">
         <a
           v-for="icon in icons_social"
           :key="icon.id"
@@ -27,7 +27,7 @@
     </div>
     <div class="w-full bg-neutral-950 p-4 text-center text-gray-100">
       <p class="font-light text-base">
-        © 2024 Desenvolvido por:
+        © 2025 Desenvolvido por:
         <span class="font-semibold text-base">THEO HENRIQUE</span>
       </p>
     </div>
