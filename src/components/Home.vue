@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-[url('/img/bg.jpg')] h-screen bg-cover bg-black" id="home">
+  <section class="bg-[url('/img/bg-th.png')] h-screen bg-cover bg-black" id="home">
     <main class="lg:max-w-6xl max-w-sm mx-auto">
       <div class="flex-col lg:top-40 top-24 space-y-10 lg:space-y-4 text-white absolute text-2xl font-semibold px-3">
         <div data-aos="fade-up" data-aos-duration="1000" class="flex flex-1 space-x-3 m-0">
