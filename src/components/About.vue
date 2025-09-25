@@ -1,6 +1,6 @@
 <template>
   <section class="bg-[url('img/home-pine.jpg')] bg-fixed" id="about">
-    <div class="bg-black/70 py-10">
+    <div class="bg-black/75 backdrop-blur-sm py-10">
       <main class="m-auto max-w-6xl flex flex-col md:flex-row items-center justify-around">  
         <div data-aos="fade-in" data-aos-duration="3000" class="flex md:w-1/2 lg:justify-start justify-center pb-5">
           <img
