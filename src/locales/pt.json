@@ -68,9 +68,9 @@
         "subtitle": "Se você tem projeto em sua mente.",
         "content": "Estou sempre aberto a novas oportunidades e adoraria ouvir sobre o seu projeto ou responder a qualquer dúvida que você possa ter. Seja para discutir uma colaboração, um desafio específico ou simplesmente para trocar ideias, sinta-se à vontade para entrar em contato. Preencha o formulário abaixo ou envie-me um e-mail diretamente. Vamos explorar como podemos trabalhar juntos para criar algo incrível!",
         "highlight": "Seu próximo projeto começa aqui.",
-        "fullName": "Nome completo",
-        "email": "Seu endereço de e-mail",
-        "phone": "Telefone para contato",
+        "fullName": "Seu nome:",
+        "email": "Seu endereço de e-mail:",
+        "phone": "Telefone para contato:",
         "messageLabel": "Em que posso te ajudar?",
         "sendButton": "Enviar Mensagem"
     },
