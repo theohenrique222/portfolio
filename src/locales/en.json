@@ -50,7 +50,7 @@
     "smileTitle": "HA Smile Designer",
     "smileContent": "A modern, responsive landing page for a dental prosthetics lab, built with Vue.js and Tailwind CSS. The project highlights the quality of services offered and makes it easy for clients to get in touch through a clean and intuitive design.",
     "nutriTitle": "NutriBase",
-    "nutriContent": "NutriBase is a web application developed with Vue.js and Tailwind CSS, designed to calculate Basal Metabolic Rate (BMR), ideal protein intake, and daily water consumption. Users can input personal data to receive personalized nutrition recommendations.",
+    "nutriContent": "NutriBase is a web application developed with Vue.js and Tailwind CSS, designed to calculate Basal Metabolic Rate, ideal protein intake, and daily water consumption.",
     "tasksTitle": "Task Manager",
     "tasksContent": "A simple task manager built with vanilla JavaScript, allowing users to add, remove, and mark tasks as completed. The project uses local storage to save tasks even after the page is closed, focusing on DOM manipulation and dynamic functionality.",
     "flexTitle": "FlexSales",

@@ -13,7 +13,7 @@
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 max-w-6xl m-auto pb-10">
             <Card v-for="card in filteredCards" :key="card.id" data-aos="fade-up" data-aos-duration="2000"
-                class="overflow-hidden w-11/12 text-center m-auto mb-5 bg-red-400">
+                class="overflow-hidden w-11/12 text-center m-auto mb-5">
                 <template #header>
                     <Image style="max-height: 25rem;" :class=card.class :src="card.cardImage" :alt="card.cardTitle"
                         preview />
