@@ -39,7 +39,7 @@
 export default {
   data() {
     return {
-      image_src: "/img/avatar.png",
+      image_src: "/img/foto-th.png",
       name_image: "Theo Henrique",
       tecnologies: [
         { name: "about.laravelTitle", content: "about.laravelContent" },
