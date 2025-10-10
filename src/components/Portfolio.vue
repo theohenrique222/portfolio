@@ -1,9 +1,9 @@
 <template>
     <section class="bg-[url('public/img/bg3.jpg')] w-full bg-fixed bg-no-repeat bg-cover" id="portfolio">
-        <div class="pt-14 mb-10 text-center text-white">
-            <p data-aos="fade-up" data-aos-duration="2000" class="font-light text-base">{{ $t("portfolio.title") }}</p>
-            <h2 data-aos="fade-up" data-aos-duration="2000" class="font-bold text-4xl">
-                <span class="text-orange-color text-4xl md:text-5xl">{{ $t("portfolio.projects") }}</span> {{
+        <div class="mb-10 text-center text-white pt-14">
+            <p data-aos="fade-up" data-aos-duration="2000" class="text-base font-light">{{ $t("portfolio.title") }}</p>
+            <h2 data-aos="fade-up" data-aos-duration="2000" class="text-4xl font-bold">
+                <span class="text-4xl text-orange-color md:text-5xl">{{ $t("portfolio.projects") }}</span> {{
                     $t("portfolio.recent") }}
             </h2>
         </div>
@@ -11,16 +11,16 @@
             <Select v-model="selectedTech" :options="allTechnologies" :placeholder="$t('portfolio.filter')"
                 class="w-11/12 md:w-1/2" />
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 max-w-6xl m-auto pb-10">
+        <div class="grid max-w-6xl grid-cols-1 pb-10 m-auto md:grid-cols-2">
             <Card v-for="card in filteredCards" :key="card.id" data-aos="fade-up" data-aos-duration="2000"
-                class="overflow-hidden w-11/12 text-center m-auto mb-5">
+                class="w-11/12 m-auto mb-5 overflow-hidden text-center">
                 <template #header>
                     <Image style="max-height: 25rem;" :class=card.class :src="card.cardImage" :alt="card.cardTitle"
                         preview />
                 </template>
 
                 <template #title>
-                    <p class="text-orange-color font-bold text-2xl">
+                    <p class="text-2xl font-bold text-orange-color">
                         {{ $t(card.cardTitle) }}
                     </p>
                 </template>
@@ -32,12 +32,12 @@
                     </div>
                 </template>
                 <template #footer>
-                    <div class="flex gap-4 mt-3 justify-center">
-                        <a class="flex justify-center text-base items-center gap-2 bg-transparent hover:bg-neutral-100 hover:text-neutral-950 w-44 h-12 rounded-md border border-neutral-400 transition-all"
+                    <div class="flex justify-center gap-4 mt-3">
+                        <a class="flex items-center justify-center h-12 gap-2 text-base transition-all bg-transparent border rounded-md hover:bg-neutral-100 hover:text-neutral-950 w-44 border-neutral-400"
                             target="_blank" :href=card.repositorio>
                             Repositório<i class="pi pi-github" style="font-size: 1.5rem"></i>
                         </a>
-                        <a class="flex justify-center text-base items-center gap-2 w-44 rounded-md" :class="[
+                        <a class="flex items-center justify-center gap-2 text-base rounded-md w-44" :class="[
                             card.link ? 'bg-orange-color hover:bg-neutral-100 hover:text-black' : 'cursor-not-allowed bg-orange-700 opacity-60 pointer-events-none'
                         ]" :href="card.link || '#'" :target="card.link ? '_blank' : null">
                             Ver Projeto
@@ -78,7 +78,7 @@ export default {
                     id: 2,
                     cardTitle: "portfolio.nutriTitle",
                     cardImage: "/img/nutri-base.jpg",
-                    link: "https://nutribase-wheat.vercel.app/",
+                    link: "https://nutri-base.vercel.app/",
                     repositorio: "https://github.com/theohenrique222/nutribase.git",
                     cardContent: "portfolio.nutriContent",
                     technologies: ["Vue.js", "Tailwind CSS"]
