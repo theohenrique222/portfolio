@@ -1,6 +1,6 @@
 <script setup>
 import Navbar from './components/Navbar.vue';
-import Hero from './components/Hero.vue';
+import HeroSection from './components/HeroSection.vue';
 import About from './components/About.vue';
 import Services from './components/Services.vue';
 import Portfolio from './components/Portfolio.vue'
@@ -10,6 +10,7 @@ import ButtonTop from './components/ButtonTop.vue';
 import { VuePreloader } from 'vue-preloader';
 
 import '../node_modules/vue-preloader/dist/style.css'
+import HeroSection from './components/HeroSection.vue';
 </script>
 
 <template>
@@ -20,7 +21,7 @@ import '../node_modules/vue-preloader/dist/style.css'
     </span>
   </VuePreloader>
   <Navbar />
-  <Hero/>
+  <HeroSection/>
   <About/>
   <Services/>
   <Portfolio/>
