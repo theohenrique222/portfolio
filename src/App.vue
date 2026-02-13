@@ -20,11 +20,11 @@ import '../node_modules/vue-preloader/dist/style.css'
     </span>
   </VuePreloader>
   <Navbar />
-  <Hero />
-  <About />
-  <Services />
-  <Portfolio />
-  <Contact />
-  <Footer />
-  <ButtonTop />
+  <Hero/>
+  <About/>
+  <Services/>
+  <Portfolio/>
+  <Contact/>
+  <Footer/>
+  <ButtonTop/>
 </template>
