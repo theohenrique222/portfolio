@@ -1,9 +1,13 @@
 {
+  "hero": {
+    "title-1": "Hello",
+    "title-2": "I'm",
+    "stack-title": "Web Developer",
+    "stack": "Laravel & Vue.js",
+    "description": "I develop web applications with a focus on structure, organization, and technical quality, working from back-end to interface. I have experience with Laravel, Vue.js, Tailwind CSS, and MySQL, applying best practices and attention to performance. As a Software Engineering student, I am seeking my first opportunity as a Junior Developer to contribute and grow professionally."
+  },
   "name": "USA",
   "welcome": "Hello, Welcome To My Portfólio",
-  "title-1": "Hello",
-  "title-2": "I'am",
-  "description": "I am a Full Stack developer focused on transforming ideas into complete solutions, combining a robust back-end with responsive and functional interfaces. My goal is to deliver applications that not only delight users with an intuitive experience but are also efficient and well-structured behind the scenes.",
   "about": {
     "title1": "About",
     "title2": "Me",
