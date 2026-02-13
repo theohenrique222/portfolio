@@ -8,9 +8,7 @@ import Contact from './components/Contact.vue';
 import Footer from './components/Footer.vue';
 import ButtonTop from './components/ButtonTop.vue';
 import { VuePreloader } from 'vue-preloader';
-
 import '../node_modules/vue-preloader/dist/style.css'
-import HeroSection from './components/HeroSection.vue';
 </script>
 
 <template>
