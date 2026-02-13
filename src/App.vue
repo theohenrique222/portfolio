@@ -1,6 +1,6 @@
 <script setup>
 import Navbar from './components/Navbar.vue';
-import Home from './components/Home.vue';
+import Hero from './components/Hero.vue';
 import About from './components/About.vue';
 import Services from './components/Services.vue';
 import Portfolio from './components/Portfolio.vue'
@@ -20,7 +20,7 @@ import '../node_modules/vue-preloader/dist/style.css'
     </span>
   </VuePreloader>
   <Navbar />
-  <Home />
+  <Hero />
   <About />
   <Services />
   <Portfolio />
