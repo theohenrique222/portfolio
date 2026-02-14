@@ -1,23 +1,23 @@
 <template>
   <nav
-    class="bg-bneutral-500/70 backdrop-blur text-white fixed top-0 left-0 right-0 p-2 z-50 border-b-2 shadow-2xl border-gray-500/20">
-    <div class="container mx-auto flex justify-between items-center max-w-6xl">
+    class="fixed top-0 left-0 right-0 z-50 p-2 text-white border-b-2 shadow-2xl bg-bneutral-500/70 backdrop-blur border-gray-500/20">
+    <div class="container flex items-center justify-between max-w-6xl mx-auto">
 
       <div class="text-4xl font-extrabold">
         <a href="/" aria-label="Home">Th<span class="text-orange-color">e</span>o<span
             class="text-orange-color">.</span></a>
       </div>
 
-      <div class="hidden md:flex cursor-pointer space-x-6 items-center text-sm font-light">
+      <div class="items-center hidden space-x-6 text-sm font-light cursor-pointer md:flex">
         <a v-for="item in items_menu" :key="item.id" :href="item.route_to"
-          class="hover:text-orange-color text-gray-100">
+          class="text-gray-100 hover:text-orange-color">
           {{ $t(item.name) }}
         </a>
 
       </div>
-      <div class="lg:flex hidden">
+      <div class="hidden lg:flex">
         <button @click="toggleLanguage"
-          class="flex items-center space-x-2 bg-gray-500/20 px-3 py-1 rounded-md text-sm font-light">
+          class="flex items-center px-3 py-1 space-x-2 text-sm font-light rounded-md bg-gray-500/20">
           <img :src="currentFlag" alt="Change language" class="w-6 h-6"/>
           <span>{{ $t("name") }}</span>
         </button>
@@ -25,7 +25,7 @@
 
       <div class="md:hidden">
         <button @click="toggleMenu">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24"
             stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
@@ -33,12 +33,13 @@
       </div>
     </div>
 
-    <div v-show="menuOpen" class="md:hidden mt-4 space-y-2">
+    <div v-show="menuOpen" class="mt-4 space-y-2 md:hidden">
       <a v-for="item in items_menu" :key="item.id" :href="item.route_to"
         class="block px-4 py-2 hover:text-orange-color">
         {{ $t(item.name) }}
       </a>
-      <button @click="toggleLanguage" class="flex items-center space-x-2 px-4 py-2">
+      
+      <button @click="toggleLanguage" class="flex items-center px-4 py-2 space-x-2">
         <img :src="currentFlag" alt="Change language" class="w-6 h-6" />
         <span>{{ $t("name") }}</span>
       </button>

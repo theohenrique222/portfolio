@@ -9,7 +9,7 @@
         <div data-aos="fade-up" data-aos-duration="1000" class="space-y-2">
           <h2 class="text-4xl font-extrabold lg:text-7xl">Theo Henrique</h2>
           <h2 class="text-base font-semibold lg:text-3xl">
-            {{ $t("hero.stack-title") }} <span class="text-orange-color">{{ $t("hero.stack") }}</span>.
+            {{ $t("hero.stack-title") }} | <span class="text-orange-color">{{ $t("hero.stack") }}</span>.
           </h2>
         </div>
         <div data-aos="fade-up" data-aos-duration="1000" class="w-full pb-10 text-base font-light tracking-widest text-gray-100 lg:w-1/2">
