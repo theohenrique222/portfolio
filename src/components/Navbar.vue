@@ -1,7 +1,7 @@
 <template>
   <nav
     class="fixed top-0 left-0 right-0 z-50 p-2 text-white border-b-2 shadow-2xl bg-bneutral-500/70 backdrop-blur border-gray-500/20">
-    <div class="container flex items-center justify-between max-w-6xl mx-auto">
+    <div class="flex items-center justify-between w-full max-w-6xl px-4 mx-auto sm:px-6 lg:px-8">
 
       <div class="text-4xl font-extrabold">
         <a href="/" aria-label="Home">Th<span class="text-orange-color">e</span>o<span
