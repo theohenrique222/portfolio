@@ -1,5 +1,5 @@
 <template>
-  <section class="pt-16 bg-[url('/img/bg-th.png')] h-screen bg-cover bg-black min-h-screen flex flex-col" id="home">
+  <section class="pt-16 bg-[url('/img/bg-th.png')] h-screen bg-cover bg-black min-h-screen flex flex-col" id="hero">
     <main class="max-w-sm m-auto lg:max-w-6xl">
       <div class="flex flex-col px-3 space-y-10 text-2xl font-semibold text-white lg:space-y-4">
         <div data-aos="fade-up" data-aos-duration="1000" class="flex flex-1 m-0 space-x-3">
