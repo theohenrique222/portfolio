@@ -22,39 +22,39 @@
       </div>
       <div data-aos="fade-up" data-aos-duration="1000" class="contact-form">
         <form @submit.prevent="sendMessage">
-  <div v-for="input in form_inputs" :key="input.id" class="relative mb-3 space-y-1">
-    <label :for="input.id_input" class="text-white">
-      {{ $t(input.title) }}
-    </label>
+          <div v-for="input in form_inputs" :key="input.id" class="relative mb-3 space-y-1">
+            <label :for="input.id_input" class="text-white">
+              {{ $t(input.title) }}
+            </label>
 
-    <input
-      v-model="form[input.id_input]"
-      :id="input.id_input"
-      :type="input.type"
-      required
-      class="block w-full p-3 text-white rounded outline-none bg-neutral-800"
-    />
-  </div>
+            <input
+              v-model="form[input.id_input]"
+              :id="input.id_input"
+              :type="input.type"
+              required
+              class="block w-full p-3 text-white rounded outline-none bg-neutral-800"
+            />
+          </div>
 
-  <div class="relative mb-3 space-y-1">
-    <label class="text-white">
-      {{ $t("contact.messageLabel") }}
-    </label>
+          <div class="relative mb-3 space-y-1">
+            <label class="text-white">
+              {{ $t("contact.messageLabel") }}
+            </label>
 
-    <textarea
-      v-model="form.message"
-      rows="3"
-      class="block w-full p-3 text-white rounded resize-none h-60 bg-neutral-800"
-    ></textarea>
-  </div>
+            <textarea
+              v-model="form.message"
+              rows="3"
+              class="block w-full p-3 text-white rounded resize-none h-60 bg-neutral-800"
+            ></textarea>
+          </div>
 
-  <button
-    type="submit"
-    class="inline-block w-full p-4 px-10 text-white rounded-md bg-orange-color"
-  >
-    {{ $t("contact.sendButton") }}
-  </button>
-</form>
+          <button
+            type="submit"
+            class="inline-block w-full p-4 px-10 text-white rounded-md bg-orange-color"
+          >
+            {{ $t("contact.sendButton") }}
+          </button>
+        </form>
       </div>
     </main>
   </section>

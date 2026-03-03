@@ -8,7 +8,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { name, email, message } = req.body
+    const { name, email, phone, message } = req.body
 
     await resend.emails.send({
       from: 'Portfolio <onboarding@resend.dev>',
@@ -18,6 +18,7 @@ export default async function handler(req, res) {
         <h2>Nova mensagem do portfólio</h2>
         <p><strong>Nome:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Telefone:</strong> ${phone}</p>
         <p><strong>Mensagem:</strong> ${message}</p>
       `
     })
