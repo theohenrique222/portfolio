@@ -180,6 +180,7 @@ export default {
           body: JSON.stringify({
             name: this.form.name,
             email: this.form.email,
+            phone: this.form.phone,
             message: this.form.message
           })
         })
