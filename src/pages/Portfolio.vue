@@ -221,10 +221,10 @@ export default {
           id: 7,
           cardTitle: "portfolio.jsonTitle",
           cardImage: "/img/json-server.jpg",
-          link: "",
-          repositorio: "",
+          link: "https://json-serve-zeta.vercel.app/",
+          repositorio: "https://github.com/theohenrique222/json-serve.git",
           cardContent: "portfolio.jsonContent",
-          technologies: ["JavaScript", "HTML", "CSS"]
+          technologies: ["JavaScript", "HTML", "CSS", "JSON"]
         },
         {
           id: 8,
