@@ -226,15 +226,6 @@ export default {
           cardContent: "portfolio.jsonContent",
           technologies: ["JavaScript", "HTML", "CSS", "JSON"]
         },
-        {
-          id: 8,
-          cardTitle: "Gerenciador de Tarefas",
-          cardImage: "/img/lista-de-afazeres.jpg",
-          link: "",
-          repositorio: "",
-          cardContent: "portfolio.tasksContent",
-          technologies: ["JavaScript", "HTML", "CSS"]
-        },
       ]
     };
   },
