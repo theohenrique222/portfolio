@@ -1,34 +1,32 @@
 <template>
-  <footer
-    class="flex flex-col items-center bg-neutral-500 text-center"
-  >
-    <div class="container pt-5">
-      <div class="mb-5 flex justify-center space-x-2">
-        <a
-          v-for="icon in icons_social"
-          :key="icon.id"
-          :href="icon.href"
-          target="_blank"
-          type="button"
-          class="rounded-full bg-transparent p-3 font-medium uppercase leading-normal text-surface bg-gray-200 transition duration-300 ease-in-out hover:bg-surface hover:text-gray-200 hover:-translate-y-2 focus:outline-none focus:ring-0"
-          data-twe-ripple-init
-        >
-          <span class="mx-auto [&>svg]:h-5 [&>svg]:w-5">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              viewBox="0 0 488 512"
-            >
-              <path :d="icon.patch" />
-            </svg>
-          </span>
+  <footer class="relative overflow-hidden bg-neutral-950 border-t border-neutral-800">
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-1/3 h-px bg-gradient-to-r from-transparent via-orange-color to-transparent">
+    </div>
+
+    <div class="max-w-6xl px-4 py-12 mx-auto sm:px-6 lg:px-8">
+      <div class="flex flex-col items-center gap-8">
+        <a href="/"
+          class="text-3xl font-extrabold text-white transition-all duration-300 hover:opacity-80">
+          Th<span class="text-orange-color">e</span>o<span class="text-orange-color">.</span>
         </a>
+
+        <div class="flex gap-3">
+          <a v-for="icon in icons_social" :key="icon.id" :href="icon.href" target="_blank"
+            class="flex items-center justify-center w-10 h-10 transition-all duration-300 rounded-xl glass-card hover:bg-orange-color hover:border-orange-color hover:-translate-y-1 hover:shadow-lg hover:shadow-orange-color/20">
+            <span class="[&>svg]:w-5 [&>svg]:h-5 text-gray-400 hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 488 512">
+                <path :d="icon.patch" />
+              </svg>
+            </span>
+          </a>
+        </div>
       </div>
     </div>
-    <div class="w-full bg-neutral-950 p-4 text-center text-gray-100">
-      <p class="font-light text-base">
+
+    <div class="py-5 text-center border-t border-neutral-800">
+      <p class="text-sm text-gray-500">
         © 2025 Desenvolvido por:
-        <span class="font-semibold text-base">THEO HENRIQUE</span>
+        <span class="font-semibold text-orange-color">THEO HENRIQUE</span>
       </p>
     </div>
   </footer>

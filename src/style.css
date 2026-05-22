@@ -3,6 +3,68 @@
 @tailwind utilities;
 
 * {
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+}
+
+::selection {
+    background-color: #ff4d05;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff4d05;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #e04404;
+}
+
+@layer utilities {
+    .text-gradient {
+        @apply bg-clip-text text-transparent bg-gradient-to-r from-orange-color to-amber-400;
+    }
+
+    .glass {
+        @apply bg-white/5 backdrop-blur-xl border border-white/10 shadow-xl;
+    }
+
+    .glass-card {
+        @apply bg-neutral-800/40 backdrop-blur-xl border border-neutral-700/50 shadow-xl;
+    }
+
+    .hover-lift {
+        @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl;
+    }
+
+    .section-padding {
+        @apply py-20 px-4 sm:px-6 lg:px-8;
+    }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+@keyframes pulse-glow {
+    0%, 100% { box-shadow: 0 0 20px rgba(255, 77, 5, 0.3); }
+    50% { box-shadow: 0 0 40px rgba(255, 77, 5, 0.6); }
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
 }
