@@ -18,11 +18,20 @@
       </div>
 
       <div class="flex items-center gap-3">
-        <button @click="toggleLanguage"
-          class="flex items-center gap-2 px-3 py-1.5 text-sm font-medium transition-all duration-300 rounded-lg bg-white/10 text-gray-300 hover:bg-white/20 hover:text-white">
-          <img :src="currentFlag" alt="" class="w-5 h-5 rounded-sm" />
-          <span class="hidden sm:inline">{{ $t("name") }}</span>
-        </button>
+        <div class="flex items-center p-0.5 rounded-lg bg-white/5 border border-white/10 backdrop-blur-sm">
+          <button @click="setLanguage('en')"
+            class="px-3 py-1.5 text-xs font-medium rounded-md transition-all duration-300"
+            :class="currentLanguage === 'en' ? 'bg-orange-color text-white shadow-sm' : 'text-gray-400 hover:text-white'"
+            aria-label="Switch to English">
+            EN
+          </button>
+          <button @click="setLanguage('pt')"
+            class="px-3 py-1.5 text-xs font-medium rounded-md transition-all duration-300"
+            :class="currentLanguage === 'pt' ? 'bg-orange-color text-white shadow-sm' : 'text-gray-400 hover:text-white'"
+            aria-label="Switch to Portuguese">
+            PT
+          </button>
+        </div>
 
         <button @click="toggleMenu" class="p-2 transition-colors rounded-lg md:hidden text-gray-300 hover:bg-white/10">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -51,30 +60,19 @@
 
 <script>
 import { useI18n } from 'vue-i18n';
-import { computed } from 'vue';
 
 export default {
   setup() {
     const { locale } = useI18n();
-    const flags = {
-      en: "https://cdn.pixabay.com/photo/2017/02/01/12/23/usa-2030059_1280.png",
-      pt: "https://cdn.pixabay.com/photo/2013/07/12/15/50/brazil-150403_1280.png"
-    };
 
-    const changeLanguage = (newLocale) => {
+    const setLanguage = (newLocale) => {
+      locale.value = newLocale;
       localStorage.setItem('locale', newLocale);
-      location.reload();
-    };
-
-    const toggleLanguage = () => {
-      const newLocale = locale.value === 'en' ? 'pt' : 'en';
-      changeLanguage(newLocale);
     };
 
     return {
       currentLanguage: locale,
-      currentFlag: computed(() => flags[locale.value]),
-      toggleLanguage,
+      setLanguage,
     };
   },
   data() {
@@ -107,6 +105,18 @@ export default {
     },
     handleScroll() {
       this.scrolled = window.scrollY > 50;
+
+      const sections = ["#hero", "#about", "#services", "#portfolio", "#contact"];
+      let current = "#hero";
+      for (const section of sections) {
+        const el = document.querySelector(section);
+        if (el && el.getBoundingClientRect().top <= 150) {
+          current = section;
+        }
+      }
+      if (this.activeHash !== current) {
+        this.activeHash = current;
+      }
     },
   },
 };

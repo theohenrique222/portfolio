@@ -18,10 +18,16 @@
 
       <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         <div v-for="(card, index) in cards_container" :key="card.id"
-          class="glass-card rounded-2xl p-8 text-center transition-all duration-500 hover:border-orange-color/30 hover:shadow-xl hover:shadow-orange-color/5 hover:-translate-y-2 group"
+          class="glass-card rounded-2xl p-8 text-center transition-all duration-500 hover:border-orange-color/40 hover:shadow-xl hover:shadow-orange-color/10 hover:-translate-y-2 group relative overflow-hidden"
           :data-aos="'fade-up'" :data-aos-delay="index * 150" data-aos-duration="800">
+
           <div
-            class="inline-flex items-center justify-center w-16 h-16 mb-6 text-3xl transition-all duration-500 rounded-2xl bg-orange-color/10 text-orange-color group-hover:bg-orange-color group-hover:text-white group-hover:shadow-lg group-hover:shadow-orange-color/30">
+            class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"
+            style="background: radial-gradient(600px circle at 50% 0%, rgba(255, 77, 5, 0.06) 0%, transparent 70%);">
+          </div>
+
+          <div
+            class="inline-flex items-center justify-center w-16 h-16 mb-6 text-3xl transition-all duration-500 rounded-2xl bg-orange-color/10 text-orange-color group-hover:bg-orange-color group-hover:text-white group-hover:shadow-lg group-hover:shadow-orange-color/30 group-hover:scale-110">
             <ion-icon :name="card.ionIcon"></ion-icon>
           </div>
 
@@ -34,16 +40,34 @@
           </p>
 
           <ul class="mb-6 space-y-3 text-left">
-            <li v-for="(item, index) in card.li_contents" :key="index"
+            <li v-for="(item, idx) in card.li_contents" :key="idx"
               class="flex items-start gap-3 text-sm text-gray-400">
-              <span class="flex-shrink-0 w-1.5 h-1.5 mt-2 rounded-full bg-orange-color"></span>
+              <span
+                class="flex-shrink-0 w-5 h-5 mt-0.5 rounded-full bg-orange-color/10 text-orange-color flex items-center justify-center text-xs">
+                <ion-icon name="checkmark-outline"></ion-icon>
+              </span>
               {{ $t(item) }}
             </li>
           </ul>
 
-          <p class="text-sm italic text-orange-color/80">
+          <div class="flex flex-wrap justify-center gap-2 mb-6">
+            <span v-for="(tag, idx) in card.tech_tags" :key="idx"
+              class="px-3 py-1 text-xs font-medium rounded-full bg-orange-color/10 text-orange-color/90 border border-orange-color/20">
+              {{ tag }}
+            </span>
+          </div>
+
+          <p class="mb-6 text-sm italic text-orange-color/70">
             {{ $t(card.conclusion) }}
           </p>
+
+          <button @click="scrollToContact"
+            class="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-medium transition-all duration-300 rounded-xl text-orange-color border border-orange-color/30 hover:bg-orange-color hover:text-white hover:shadow-lg hover:shadow-orange-color/25 group/btn">
+            {{ $t("services-cta") }}
+            <ion-icon name="arrow-forward-outline"
+              class="transition-transform duration-300 group-hover/btn:translate-x-1">
+            </ion-icon>
+          </button>
         </div>
       </div>
     </div>
@@ -58,26 +82,28 @@ export default {
         {
           id: 1,
           title: "services-front-title",
-          ionIcon: "desktop-outline",
+          ionIcon: "code-slash-outline",
           content: "services-front-content",
           li_contents: [
             "services-front-item-1",
             "services-front-item-2",
             "services-front-item-3"
           ],
+          tech_tags: ["Vue.js", "React", "Tailwind CSS", "JavaScript"],
           conclusion: "services-front-conclusion"
         },
         {
           id: 2,
-          title: "services-mobile-title",
-          ionIcon: "phone-portrait-outline",
-          content: "services-mobile-content",
+          title: "services-env-title",
+          ionIcon: "cube-outline",
+          content: "services-env-content",
           li_contents: [
-            "services-mobile-item-1",
-            "services-mobile-item-2",
-            "services-mobile-item-3"
+            "services-env-item-1",
+            "services-env-item-2",
+            "services-env-item-3"
           ],
-          conclusion: "services-mobile-conclusion"
+          tech_tags: ["Docker", "Linux", "CI/CD", "Nginx"],
+          conclusion: "services-env-conclusion"
         },
         {
           id: 3,
@@ -89,10 +115,19 @@ export default {
             "services-back-item-2",
             "services-back-item-3"
           ],
+          tech_tags: ["Laravel", "PHP", "MySQL", "API REST"],
           conclusion: "services-back-conclusion"
         }
       ]
     };
+  },
+  methods: {
+    scrollToContact() {
+      const el = document.getElementById("contact");
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }
   }
 };
 </script>
