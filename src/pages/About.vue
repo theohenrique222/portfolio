@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-[url('img/home-pine.jpg')] bg-fixed" id="about">
+  <section class="bg-[url('public/img/bg2.jpg')] bg-fixed" id="about">
     <div class="py-10 bg-black/75 backdrop-blur-sm">
       <main class="flex flex-col items-center justify-around max-w-6xl m-auto md:flex-row">  
         <div data-aos="fade-up" data-aos-duration="3000" class="flex justify-center pb-5 md:w-1/2 lg:justify-start">

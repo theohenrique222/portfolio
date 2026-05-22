@@ -4,7 +4,7 @@
         "title-2": "Eu sou",
         "stack-title": "Desenvolvedor Web",
         "stack": "Laravel & Vue.js",
-        "description": "Desenvolvo aplicações web com foco em estrutura, organização e qualidade técnica, atuando do back-end à interface. Tenho experiência com Laravel, Vue.js, Tailwind CSS e MySQL, aplicando boas práticas e atenção à performance. Estudante de Engenharia de Software, busco minha primeira oportunidade como Desenvolvedor Júnior para contribuir e evoluir profissionalmente."
+        "description": "Desenvolvedor Full Stack especializado em Laravel e Vue.js, criando sistemas modernos com código limpo, interfaces intuitivas e arquitetura escalável."
         
     },
     "name": "BR",
@@ -13,16 +13,16 @@
         "title1": "Sobre",
         "title2": "Mim",
         "subtitle": "Bem-vindo ao meu portfólio!",
-        "description": "Desenvolvedor Full Stack com experiência em HTML, CSS e PHP, atuando na criação de interfaces responsivas e back-ends eficientes. Utilizo Laravel, Vue.js, Tailwind CSS e MySQL no desenvolvimento de aplicações web completas e bem estruturadas.",
-        "conclusion": "Vamos construir algo incrível juntos!",
+        "description": "Focado em criar aplicações web modernas, performáticas e bem estruturadas.",
         "reactTitle": "React Native:",
         "reactContent": "Experiência com React Native no desenvolvimento de aplicações móveis nativas, focando em performance, escalabilidade e uma experiência de usuário otimizada para diversas plataformas.",
         "laravelTitle": "Laravel: ",
-        "laravelContent": "Desenvolvimento de aplicações completas com integração entre front-end e back-end. Criação de APIs e uso de bibliotecas como Filament e AdminLTE para painéis e interfaces administrativas personalizadas.",
-        "vueTitle": "Vue.js: ",
-        "vueContent": "Experiência com Vue.js no desenvolvimento de interfaces interativas e aplicações móveis, com foco em alta performance, usabilidade e experiência do usuário.",
-        "tailwindTitle": "Tailwind CSS: ",
-        "tailwindContent": "Com Tailwind CSS, desenvolvo interfaces modernas, responsivas e de alta performance, garantindo agilidade e flexibilidade no processo de criação."
+        "laravelContent": "Desenvolvimento de aplicações completas, APIs e painéis administrativos com Filament e AdminLTE.",
+        "vueTitle": "Vue.js + Inertia.js: ",
+        "vueContent": "Criação de interfaces modernas e reativas com integração fluida entre front-end e back-end.",
+        "tailwindTitle": "Docker: ",
+        "tailwindContent": "Configuração de ambientes isolados e padronizados para desenvolvimento e deploy de aplicações.",
+        "conclusion": "Vamos construir algo incrível juntos!"
     },
     "services-intro": "No que sou especialista",
     "services-title-1": "Meus",
