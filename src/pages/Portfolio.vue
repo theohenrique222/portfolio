@@ -193,8 +193,8 @@ export default {
         {
           id: 4,
           cardTitle: "portfolio.smileTitle",
-          cardImage: "/img/ha-smile-designer.jpg",
-          link: "https://smile-designer.vercel.app/",
+          cardImage: "/img/portfolio/ha-smile.png",
+          link: "https://hudsonazevedo.vercel.app/",
           repositorio: "https://github.com/theohenrique222/smile-designer.git",
           cardContent: "portfolio.smileContent",
           technologies: ["Vue.js", "Tailwind CSS"]
