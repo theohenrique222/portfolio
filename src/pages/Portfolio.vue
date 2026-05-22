@@ -137,12 +137,23 @@ export default {
         "MySQL",
         "AdminLTE",
         "Bootstrap",
+        "Docker",
         "Filament",
+        "Inertia.js",
         "HTML",
         "CSS",
         "JSON",
       ],
       cardsContainer: [
+        {
+          id: 9,
+          cardTitle: "portfolio.fittrackTitle",
+          cardImage: "/img/portfolio/fittrack.png",
+          link: "",
+          repositorio: "https://github.com/theohenrique222/fittrack-inertia.git",
+          cardContent: "portfolio.fittrackContent",
+          technologies: ["Laravel", "Vue.js", "Inertia.js", "Docker", "MySQL"]
+        },
         {
           id: 1,
           cardTitle: "portfolio.flexTitle",

@@ -51,6 +51,8 @@
     "title": "Portfolio",
     "projects": "Projects",
     "recent": "Recent",
+    "fittrackTitle": "FitTrack",
+    "fittrackContent": "FitTrack is a web application developed with Laravel, Vue.js and Inertia.js, designed for managing workouts, exercises, and physical performance tracking.",
     "burgerTitle": "Burger Manager",
     "burgerContent": "An efficient order management system for a burger restaurant, built with Vue.js and Tailwind CSS. Featuring a JSON-based backend, the system offers quick status control and an intuitive interface optimized for user experience.",
     "smileTitle": "HA Smile Designer",
