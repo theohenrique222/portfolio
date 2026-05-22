@@ -1,75 +1,166 @@
-# Theo Henrique | Portfólio
+<div align="center">
+  <img src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D" alt="Vue.js"/>
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS"/>
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite"/>
+  <img src="https://img.shields.io/badge/PrimeVue-41B883?style=for-the-badge&logo=vue.js&logoColor=white" alt="PrimeVue"/>
+  <img src="https://img.shields.io/badge/i18n-1572B6?style=for-the-badge&logo=localize&logoColor=white" alt="i18n"/>
+</div>
 
-**👋 Seja bem-vindo ao meu portfólio!**
+<h1 align="center">Theo Henrique | Portfólio</h1>
 
-Aqui você encontrará uma seleção dos projetos que desenvolvi, utilizando tecnologias modernas como Vue.js, React, Laravel, Tailwind CSS, entre outras. Meu foco está sempre em criar soluções com boas práticas de desenvolvimento, usabilidade e design responsivo.
+<p align="center">
+  <strong>Full Stack Developer</strong> specializing in <strong>Laravel & Vue.js</strong>
+  <br/>
+  Building modern, performant, and scalable web applications.
+</p>
 
-## 🚀 Tecnologias & Ferramentas
+---
 
-**Front-end:**
+## ✨ Features
 
-![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+- 🌐 **Internationalization (i18n)** — Full support for Portuguese and English
+- 🎨 **Animated Particles Background** — Interactive canvas particle system
+- ⌨️ **Typewriter Effect** — Dynamic text animation on hero section
+- 📊 **Skill Bars** — Animated skill progression bars
+- 🖼️ **Portfolio Filter** — Filter projects by technology
+- 📱 **Fully Responsive** — Mobile-first design with Tailwind CSS
+- 📬 **Contact Form** — Serverless email sending via Resend API
+- 🧭 **Scroll Progress** — Visual scroll progress indicator
+- 🔝 **Back to Top Button** — Smooth scroll-to-top navigation
+- 🎯 **AOS Animations** — Scroll-triggered animations
 
-**Back-end:**
+---
 
-![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+## 🛠️ Stack
 
+**Frontend**  
+Vue.js 3 • Vite • Tailwind CSS • PrimeVue • AOS
 
-**Outras Ferramentas:**
+**Backend / API**  
+Laravel • Filament PHP • AdminLTE • Resend (email)
 
-![Filament PHP](https://img.shields.io/badge/Filament-000000?style=for-the-badge&logo=laravel&logoColor=white)
-![React Native](https://img.shields.io/badge/ReactNative-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+**Mobile**  
+React Native
 
-## ⭐ Projetos em Destaque
+**DevOps**  
+Docker • Git
 
-## 🛒 Flex Sales
-Sistema de gerenciamento de vendas, integrando cadastro e controle de produtos, clientes e vendedores. Inclui funcionalidade para registrar vendas, controlar pagamentos, parcelamentos e acompanhar o status das transações. Possui uma interface baseada no AdminLTE para facilitar a gestão.
+---
 
-_Tecnologias: Laravel, PHP, MySQL, AdminLTE, JavaScript, HTML5, CSS3_
+## 🚀 Getting Started
 
+```bash
+# Clone the repository
+git clone https://github.com/theohenrique222/portfolio.git
 
+# Navigate to the project
+cd portfolio
 
-### 🥤 NutriBase:
+# Install dependencies
+npm install
 
-Aplicação para cálculo de metabolismo basal, ingestão diária de proteínas e consumo de água.
+# Start development server
+npm run dev
+```
 
-_Tecnologias: Vue.js, Laravel, Filament PHP, Tailwind CSS_
+### Build for production
+
+```bash
+npm run build
+npm run preview
+```
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+├── components/         # Reusable Vue components
+│   ├── Navbar.vue
+│   ├── HeroSection.vue
+│   ├── ParticlesBackground.vue
+│   ├── TypewriterText.vue
+│   ├── SkillBar.vue
+│   ├── ScrollProgress.vue
+│   ├── SectionDivider.vue
+│   ├── ButtonTop.vue
+│   └── Footer.vue
+├── pages/              # Page sections
+│   ├── Hero.vue
+│   ├── About.vue
+│   ├── Services.vue
+│   ├── Portfolio.vue
+│   └── Contact.vue
+├── locales/            # i18n translations
+│   ├── en.json
+│   └── pt.json
+├── App.vue             # Root component
+├── main.js             # Application entry point
+└── style.css           # Global styles
+
+api/
+└── send-email.js       # Serverless email endpoint (Resend)
+```
+
+---
+
+## 💼 Featured Projects
+
+### 🏋️ FitTrack
+Modern workout and fitness tracking web application focused on performance and user experience.
+*Laravel • Vue.js • Inertia.js • Docker • MySQL*
+
+### 🛒 FlexSales
+Sales management system with customizable payment methods, client, seller, and product management.  
+*Laravel • AdminLTE • JavaScript • MySQL*
+
+### 🥤 NutriBase
+Basal metabolic rate, protein intake, and daily water consumption calculator.  
+*Vue.js • Laravel • Filament PHP • Tailwind CSS*
 
 ### 🍔 Burger Manager
+Order management system for burger restaurants with real-time status tracking.  
+*Vue.js • Tailwind CSS • JSON Server*
 
-Sistema simples de gerenciamento de pedidos para hamburguerias.
-Permite criar, acompanhar e gerenciar pedidos com uma interface prática e intuitiva.
+### 🦷 HA Smile Designer
+Modern, responsive landing page for a dental prosthetics lab.  
+*Vue.js • Tailwind CSS*
 
-_Tecnologias: Vue.js, Tailwind CSS, JSON_
+### 🦷 Dental Lab
+Price table management system for dental prosthetics labs — admin backend + public frontend.  
+*Laravel • Filament • MySQL • Vue.js • Tailwind CSS*
 
-### 🦷 HA-Smile Designer
-Landing page desenvolvida para um laboratório de prótese dentária, com foco em modernidade e responsividade.
+### 🔐 Password Generator
+Secure password generator with customizable length and character types.  
+*React Native • Tailwind CSS*
 
-_Tecnologias: Vue.js, Tailwind CSS_
+### 📋 Task Manager
+Minimalist task management app with local storage persistence.  
+*Vanilla JavaScript • HTML5 • CSS3*
 
-### ✅ To-Do List
-Aplicação minimalista de gerenciamento de tarefas, com armazenamento local para persistência dos dados.
+### 📦 JSON Server API
+RESTful API simulating a burger shop backend for front-end development and testing.  
+*JSON Server*
 
-_Tecnologias: JavaScript puro, HTML5, CSS3_
+---
 
-## 👨‍💻 Sobre Mim
+## 👨‍💻 About Me
 
-Sou um desenvolvedor Full-Stack com experiência tanto no front-end quanto no back-end. Tenho paixão por criar aplicações completas, modernas e eficientes, sempre unindo boas práticas de desenvolvimento com foco em usabilidade e desempenho.
+I'm a Full Stack Developer passionate about building complete, modern, and efficient applications. My core stack includes **Vue.js**, **Laravel**, **PHP**, and **MySQL**, complemented by **Filament PHP**, **Tailwind CSS**, and **Docker**.
 
-Minha stack principal inclui tecnologias como Vue.js, Laravel, PHP e MySQL, além de ferramentas como Filament PHP e Tailwind CSS para entregar soluções robustas e de alta qualidade.
+I'm constantly learning and exploring new technologies to deliver creative, functional, and high-quality solutions.
 
-Estou sempre em constante aprendizado, buscando evoluir minhas habilidades e explorar novas tecnologias para desenvolver soluções criativas e funcionais.
+---
 
-## 📫 Contato
+## 📫 Contact
 
-Email: theodoro222@hotmail.com 
+- **Email:** [theodoro222@hotmail.com](mailto:theodoro222@hotmail.com)
+- **LinkedIn:** [Theo Henrique](https://www.linkedin.com/in/theodoro-henrique-20458827a/)
+- **Instagram:** [@theohbezerra_](https://instagram.com/@theohbezerra_)
 
-LinkedIn: [Theo Henrique](https://www.linkedin.com/in/theodoro-henrique-20458827a/)
+---
+
+<p align="center">
+  <sub>Built with ❤️ using Vue.js & Tailwind CSS</sub>
+</p>
