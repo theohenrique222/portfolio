@@ -155,6 +155,15 @@ export default {
           technologies: ["Laravel", "Vue.js", "Inertia.js", "Docker", "MySQL"]
         },
         {
+          id: 10,
+          cardTitle: "portfolio.ilumaTitle",
+          cardImage: "/img/portfolio/iluma.png",
+          link: "",
+          repositorio: "https://github.com/theohenrique222/iluma-todo.git",
+          cardContent: "portfolio.ilumaContent",
+          technologies: ["Laravel", "Vue.js", "Inertia.js", "Docker", "MySQL"]
+        },
+        {
           id: 1,
           cardTitle: "portfolio.flexTitle",
           cardImage: "/img/flex-sales.jpg",

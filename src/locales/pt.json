@@ -54,6 +54,8 @@
         "recent": "Recentes",
         "fittrackTitle": "FitTrack",
         "fittrackContent": "O FitTrack é uma aplicação web desenvolvida com Laravel, Vue.js e Inertia.js, projetada para gerenciamento de treinos, exercícios e acompanhamento de desempenho físico.",
+        "ilumaTitle": "Iluma",
+        "ilumaContent": "Aplicação web open source desenvolvida com Laravel, Vue.js, Inertia.js e Docker, focada em arquitetura moderna, performance e desenvolvimento colaborativo. Contribuições em funcionalidades, melhorias e evolução do projeto.",
         "burgerTitle": "Burger Manager",
         "burgerContent": "Sistema eficiente para gerenciamento de pedidos em uma hamburgueria, utilizando Vue.js e Tailwind CSS. Com um backend em JSON, o sistema permite o controle ágil de status dos pedidos e uma interface intuitiva, otimizada para a experiência do usuário",
         "smileTitle": "HA Smile Designer",
