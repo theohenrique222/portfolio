@@ -164,6 +164,15 @@ export default {
           technologies: ["Laravel", "Vue.js", "Inertia.js", "Docker", "MySQL"]
         },
         {
+          id: 11,
+          cardTitle: "portfolio.nutriLaravelTitle",
+          cardImage: "/img/portfolio/nutribase.png",
+          link: "https://nutri-base.vercel.app/",
+          repositorio: "https://github.com/theohenrique222/nutribase-laravel",
+          cardContent: "portfolio.nutriLaravelContent",
+          technologies: ["Laravel", "Vue.js", "Filament", "Tailwind CSS", "MySQL"]
+        },
+        {
           id: 1,
           cardTitle: "portfolio.flexTitle",
           cardImage: "/img/flex-sales.jpg",
@@ -171,15 +180,6 @@ export default {
           repositorio: "https://github.com/theohenrique222/FlexSales.git",
           cardContent: "portfolio.flexContent",
           technologies: ["Laravel", "MySQL", "AdminLTE", "JavaScript"]
-        },
-        {
-          id: 2,
-          cardTitle: "portfolio.nutriTitle",
-          cardImage: "/img/nutri-base.jpg",
-          link: "https://nutri-base.vercel.app/",
-          repositorio: "https://github.com/theohenrique222/nutribase.git",
-          cardContent: "portfolio.nutriContent",
-          technologies: ["Vue.js", "Tailwind CSS"]
         },
         {
           id: 3,
